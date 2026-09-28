@@ -18,9 +18,20 @@
         就會自動開啟；未安裝可以先下載。
       </p>
       <p>
-        This link is a BeyHK match invite, confirmation or player profile. It opens in the app when
+        This link is a BeyHK invite, match confirmation or player profile. It opens in the app when
         installed; otherwise install the app first.
       </p>
+      <section id="invite" hidden>
+        <p>
+          朋友邀請你玩 BeyHK。裝咗 App
+          之後再撳一次呢條連結，登記時就會自動用佢嘅邀請碼；或者喺第一場對戰之前，喺「個人」頁輸入：
+        </p>
+        <p>
+          A friend invited you to BeyHK. Once the app is installed, tap this link again and their
+          code is applied when you sign up, or enter it on your Profile before your first match:
+        </p>
+        <p class="code" id="invite-code"></p>
+      </section>
       <nav class="pages">
         <a id="open" href="#">喺 App 開啟 · Open in app</a>
         <a href="https://apps.apple.com/app/idAPP_STORE_ID">App Store</a>
@@ -38,6 +49,14 @@
         var target = 'beyhk://' + location.pathname.replace(/^\//, '') + location.search;
         var link = document.getElementById('open');
         link.setAttribute('href', target);
+        // Session 60: an invite link (/i/<8 hex>) also shows the code, grouped like the app does.
+        var m = location.pathname.match(/^\/i\/([0-9a-fA-F]{8})\/?$/);
+        if (m) {
+          var code = m[1].toUpperCase();
+          document.getElementById('invite-code').textContent =
+            code.slice(0, 4) + ' ' + code.slice(4);
+          document.getElementById('invite').hidden = false;
+        }
       })();
     </script>
   </body>

@@ -6,7 +6,8 @@
         "components": [
           { "/": "/invite/*", "comment": "match invite (claim_invite)" },
           { "/": "/match/confirm/*", "comment": "confirm QR" },
-          { "/": "/player/*", "comment": "public profile" }
+          { "/": "/player/*", "comment": "public profile" },
+          { "/": "/i/*", "comment": "invite link (referral code)" }
         ]
       }
     ]
