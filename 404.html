@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BeyHK — 用 App 開啟 / Open in the app</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="line"></div>
+        <span class="meta">BeyHK</span>
+      </header>
+      <h1>用 BeyHK App 開啟</h1>
+      <p>
+        呢條連結係 BeyHK App 嘅邀請、對戰確認或者玩家檔案。安裝咗 App
+        就會自動開啟；未安裝可以先下載。
+      </p>
+      <p>
+        This link is a BeyHK match invite, confirmation or player profile. It opens in the app when
+        installed; otherwise install the app first.
+      </p>
+      <nav class="pages">
+        <a id="open" href="#">喺 App 開啟 · Open in app</a>
+        <a href="https://apps.apple.com/app/idAPP_STORE_ID">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=sh.beyhk.app">Google Play</a>
+        <a href="/">主頁 · Home</a>
+      </nav>
+      <footer>
+        BeyHK 與 Takara Tomy 或 Hasbro 並無關聯。BeyHK is not affiliated with Takara Tomy or Hasbro.
+        Beyblade is a trademark of its owners.
+      </footer>
+    </main>
+    <script>
+      // Same path, app scheme: a fallback for phones where the universal link did not verify.
+      (function () {
+        var target = 'beyhk://' + location.pathname.replace(/^\//, '') + location.search;
+        var link = document.getElementById('open');
+        link.setAttribute('href', target);
+      })();
+    </script>
+  </body>
+</html>

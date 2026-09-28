@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "sh.beyhk.app",
+      "sha256_cert_fingerprints": [
+        "6A:02:CA:BD:6B:21:BC:6A:A6:1D:56:6E:7B:16:A1:24:D2:71:9C:D0:F9:8B:17:5E:02:ED:46:34:E3:8B:AA:4C"
+      ]
+    }
+  }
+]

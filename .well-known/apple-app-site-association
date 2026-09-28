@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["APPLE_TEAM_ID.sh.beyhk.app"],
+        "components": [
+          { "/": "/invite/*", "comment": "match invite (claim_invite)" },
+          { "/": "/match/confirm/*", "comment": "confirm QR" },
+          { "/": "/player/*", "comment": "public profile" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["APPLE_TEAM_ID.sh.beyhk.app"]
+  }
+}
