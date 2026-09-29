@@ -118,6 +118,14 @@
             your user id, never your email) and a small set of usage events with your user id (for
             example "match logged") to improve the app.
           </li>
+          <li>
+            <strong>Usage stats (only if you turn them on):</strong> off by default. If you switch
+            on Settings › Privacy › Share usage stats (on a managed account only the guardian can),
+            the app sends Google Analytics for Firebase which screens you open and which buttons you
+            tap, how far you scroll and which swipe actions you use. These events carry no user id,
+            handle, messages or location, and no advertising id is collected. Switching it off stops
+            collection and clears the data held on your phone.
+          </li>
         </ul>
         <h2>How we use it</h2>
         <p>
@@ -128,8 +136,9 @@
         <h2>Who can see it</h2>
         <p>
           Data is stored with Supabase (database and file storage). Crash reports are handled by
-          Sentry. Push notifications are delivered through Expo. These providers process data only
-          to operate the app.
+          Sentry. Push notifications are delivered through Expo. If you opted in to usage stats,
+          they are processed by Google Analytics for Firebase. These providers process data only to
+          operate the app.
         </p>
         <h2>Age</h2>
         <p>
