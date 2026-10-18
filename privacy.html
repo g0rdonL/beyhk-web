@@ -68,6 +68,16 @@
             會由連線嘅 IP
             地址推算大概位置（城市同國家）。關閉之後即停止收集，並清走呢部手機上嘅數據。
           </li>
+          <li>
+            <strong>舉報分析：</strong>當有玩家舉報訊息或玩家時，以下資料會交由 Anthropic 嘅 Claude
+            API
+            自動分析，為管理員提供建議：被舉報嘅訊息及同一聊天室前後嘅訊息（連同發訊者嘅用戶名同時間）；如屬舉報玩家，則為被舉報玩家最近嘅訊息（連同時間；私訊只限已有訊息被舉報嘅對話）、用戶名、顯示名稱同戰隊名稱；舉報人填寫嘅說明、舉報類別同時間；舉報人過往舉報嘅成立／駁回紀錄；雙方最近
+            48
+            小時內有冇爭議、拒絕、敗仗或封鎖；以及被舉報帳戶嘅開戶日數、是否家長管理帳戶、是否停權、開放中嘅舉報數目、過往個案同處分、段位。唔會送出電郵地址、帳戶
+            ID
+            或位置。分析結果只有管理員睇到，唔會自動處分任何人；涉及兒童安全嘅舉報唔會送出分析。Anthropic
+            按其 API 條款處理呢啲資料。
+          </li>
         </ul>
         <h2>我哋點樣用</h2>
         <p>
@@ -76,8 +86,8 @@
         <h2>邊個可以睇到</h2>
         <p>
           資料儲存喺 Supabase（資料庫同檔案儲存）。當機報告由 Sentry 處理。推送通知經 Expo
-          送出。如果你開啟咗分享使用數據，相關數據由 Google Analytics for Firebase
-          處理。以上服務只為運作 App 而處理資料。
+          送出。如果你開啟咗分享使用數據，相關數據由 Google Analytics for Firebase 處理。舉報分析由
+          Anthropic（Claude API）為管理員處理。以上服務只為運作 App 而處理資料。
         </p>
         <h2>年齡</h2>
         <p>
@@ -150,6 +160,21 @@
             out an approximate location (city and country) from the connection's IP address.
             Switching it off stops collection and clears the data held on your phone.
           </li>
+          <li>
+            <strong>Report analysis:</strong> When a player reports a message or a player, the
+            following is analysed by Anthropic's Claude API to give moderators a suggestion: the
+            reported message and nearby messages in the same room, with their senders' handles and
+            times; for a player report, the reported player's recent messages with their times
+            (direct messages only from conversations that already have a reported message), handle,
+            display name and deck names; the reporter's note, the report category and time; the
+            reporter's record of upheld and dismissed reports; whether the two players had a
+            dispute, rejection, loss or block in the previous 48 hours; and the reported account's
+            age in days, whether it is a parent-managed account, whether it is banned, the number of
+            open reports against the account, its past cases and actions, and its tier. No email
+            address, account id or location is sent. Only moderators see the result and nothing is
+            actioned automatically; child-safety reports are never sent. Anthropic processes this
+            data under its API terms.
+          </li>
         </ul>
         <h2>How we use it</h2>
         <p>
@@ -161,8 +186,8 @@
         <p>
           Data is stored with Supabase (database and file storage). Crash reports are handled by
           Sentry. Push notifications are delivered through Expo. If you opted in to usage stats,
-          they are processed by Google Analytics for Firebase. These providers process data only to
-          operate the app.
+          they are processed by Google Analytics for Firebase. Report triage for moderators is
+          processed by Anthropic (Claude API). These providers process data only to operate the app.
         </p>
         <h2>Age</h2>
         <p>
