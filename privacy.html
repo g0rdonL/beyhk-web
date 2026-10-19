@@ -6,6 +6,7 @@
     <title>BeyHK 私隱政策 · Privacy policy</title>
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/consent.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -26,7 +27,7 @@
     </header>
     <main id="content" class="legal">
       <h1>私隱政策 · Privacy policy</h1>
-      <p class="meta">最後更新 / Last updated: 2026-10-17</p>
+      <p class="meta">最後更新 / Last updated: 2026-10-20</p>
       <div class="lang"><a href="#zh">繁體中文</a><a href="#en">English</a></div>
 
       <section lang="zh-HK" id="zh">
@@ -68,6 +69,16 @@
             會由連線嘅 IP
             地址推算大概位置（城市同國家）。關閉之後即停止收集，並清走呢部手機上嘅數據。
           </li>
+          <li id="web-analytics">
+            <strong>網站（beyhk.sh）分析（只限你接受咗）：</strong>第一次開呢個網站會問你接受定拒絕
+            Cookie。你撳「接受」之後，網站先會經 Google Tag Manager 載入 Google
+            Analytics，記錄你睇咗邊啲頁、由邊度連過嚟、裝置同瀏覽器類型，同埋由 IP
+            地址推算嘅大概位置（城市同國家），並喺你嘅瀏覽器存 Google Analytics 嘅
+            Cookie。所有廣告用途（廣告 Cookie、廣告個人化、Google
+            信號）一律關閉。邀請連結（beyhk.sh/i/…）嘅頁面唔會載入分析，所以邀請碼唔會送去
+            Google。你可以隨時喺網站頁底「Cookie 設定」改變主意；揀拒絕會清走呢啲 Cookie。網站分析同
+            App 嘅使用數據分開處理，唔會連到你嘅 BeyHK 帳戶。
+          </li>
           <li>
             <strong>舉報分析：</strong>當有玩家舉報訊息或玩家時，以下資料會交由騰訊雲 TokenHub
             上嘅智譜 GLM
@@ -85,8 +96,9 @@
         <h2>邊個可以睇到</h2>
         <p>
           資料儲存喺 Supabase（資料庫同檔案儲存）。當機報告由 Sentry 處理。推送通知經 Expo
-          送出。如果你開啟咗分享使用數據，相關數據由 Google Analytics for Firebase 處理。舉報分析由
-          騰訊雲 TokenHub（智譜 GLM 模型，新加坡）為管理員處理。以上服務只為運作 App 而處理資料。
+          送出。如果你開啟咗分享使用數據，相關數據由 Google Analytics for Firebase
+          處理；如果你喺網站接受咗 Cookie，網站分析由 Google Analytics 處理。舉報分析由 騰訊雲
+          TokenHub（智譜 GLM 模型，新加坡）為管理員處理。以上服務只為運作 App 而處理資料。
         </p>
         <h2>年齡</h2>
         <p>
@@ -159,6 +171,18 @@
             out an approximate location (city and country) from the connection's IP address.
             Switching it off stops collection and clears the data held on your phone.
           </li>
+          <li id="web-analytics-en">
+            <strong>Website (beyhk.sh) analytics (only if you accept):</strong> the first time you
+            open the site it asks you to accept or reject cookies. Only after you tap Accept does
+            the site load Google Analytics through Google Tag Manager, which records which pages you
+            view, where you came from, your device and browser type and an approximate location
+            (city and country) worked out from your IP address, and stores Google Analytics cookies
+            in your browser. Every advertising use (ad cookies, ad personalisation, Google signals)
+            is off. Invite-link pages (beyhk.sh/i/…) never load analytics, so invite codes are not
+            sent to Google. You can change your mind at any time from "Cookie settings" at the foot
+            of every page; rejecting clears those cookies. Website analytics is kept apart from the
+            app's usage stats and is not linked to your BeyHK account.
+          </li>
           <li>
             <strong>Report analysis:</strong> When a player reports a message or a player, the
             following is analysed by the Zhipu GLM model hosted on Tencent Cloud TokenHub (processed
@@ -186,7 +210,8 @@
         <p>
           Data is stored with Supabase (database and file storage). Crash reports are handled by
           Sentry. Push notifications are delivered through Expo. If you opted in to usage stats,
-          they are processed by Google Analytics for Firebase. Report triage for moderators is
+          they are processed by Google Analytics for Firebase; if you accepted cookies on the
+          website, its analytics are processed by Google Analytics. Report triage for moderators is
           processed by Tencent Cloud TokenHub (Zhipu GLM model, Singapore). These providers process
           data only to operate the app.
         </p>
@@ -230,6 +255,9 @@
           <a href="/privacy.html">私隱政策</a>
           <a href="/terms.html">使用條款</a>
           <a href="/data-deletion.html">刪除資料</a>
+          <button type="button" class="cookie-settings" data-consent-open hidden>
+            Cookie 設定
+          </button>
         </nav>
         <nav aria-label="追蹤">
           <a href="https://www.instagram.com/beyhkfun" rel="me noopener">Instagram @beyhkfun</a>
