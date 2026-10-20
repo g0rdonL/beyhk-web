@@ -1,7 +1,7 @@
 /*
  * beyhk.sh website analytics behind a cookie prompt (BEYHK-380). Rendered to web/consent.js by
- * scripts/site/render.ts, which fills in the Google Tag Manager container from config.gtmId;
- * with no container the file does nothing and no prompt shows.
+ * scripts/site/render.ts, which fills in the Google tag from config.googleTagId;
+ * with no tag id the file does nothing and no prompt shows.
  *
  * Nothing from Google loads until the visitor taps Accept. The choice is kept in localStorage
  * for a year. Consent Mode keeps every advertising signal denied even after Accept, because the
@@ -10,7 +10,7 @@
  * Google; the path check below is a second guard.
  */
 (function () {
-  const GTM_ID = null;
+  const TAG_ID = 'G-X52E2LW0JH';
   const KEY = 'beyhk-consent';
   const MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
   const TEXT = {
@@ -30,7 +30,7 @@
     },
   };
 
-  if (!GTM_ID || /^\/i\//.test(location.pathname)) return;
+  if (!TAG_ID || /^\/i\//.test(location.pathname)) return;
 
   function stored() {
     try {
@@ -56,7 +56,7 @@
     }
   }
 
-  function loadTagManager() {
+  function loadGoogleTag() {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       window.dataLayer.push(arguments);
@@ -71,10 +71,19 @@
       security_storage: 'granted',
     });
     gtag('set', 'ads_data_redaction', true);
-    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
     const s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(GTM_ID);
+    if (/^GTM-/.test(TAG_ID)) {
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(TAG_ID);
+    } else {
+      gtag('js', new Date());
+      gtag('config', TAG_ID, {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+      });
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(TAG_ID);
+    }
     document.head.appendChild(s);
   }
 
@@ -106,7 +115,7 @@
     const was = stored();
     save(choice);
     close();
-    if (choice === 'granted' && was !== 'granted') loadTagManager();
+    if (choice === 'granted' && was !== 'granted') loadGoogleTag();
     if (choice === 'denied' && was === 'granted') {
       clearAnalyticsCookies();
       location.reload();
@@ -144,7 +153,7 @@
 
   function start() {
     const choice = stored();
-    if (choice === 'granted') loadTagManager();
+    if (choice === 'granted') loadGoogleTag();
     if (!choice) open();
     document.querySelectorAll('[data-consent-open]').forEach(function (b) {
       b.hidden = false;
