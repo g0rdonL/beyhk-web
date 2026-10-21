@@ -4,7 +4,14 @@
   <id>https://beyhk.sh/blog/</id>
   <link rel="alternate" href="https://beyhk.sh/blog/" />
   <link rel="self" href="https://beyhk.sh/blog/feed.xml" type="application/atom+xml" />
-  <updated>2026-10-21T06:12:31.659Z</updated>
+  <updated>2026-10-21T06:13:10.000Z</updated>
   <author><name>BeyHK</name></author>
-
+  <entry>
+    <id>https://beyhk.sh/blog/smoke-test/</id>
+    <title>測試文章 smoke test</title>
+    <link rel="alternate" href="https://beyhk.sh/blog/smoke-test/" />
+    <published>2026-10-21T14:13:10.000+08:00</published>
+    <updated>2026-10-21T14:13:10.000+08:00</updated>
+    <summary>呢篇係系統測試，會即刻移除。This is a pipeline test for Beyblade X community site plumbing; it will be unpublished.</summary>
+  </entry>
 </feed>
