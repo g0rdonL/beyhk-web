@@ -28,7 +28,7 @@
     </header>
     <main id="content" class="legal">
       <h1>私隱政策 · Privacy policy</h1>
-      <p class="meta">最後更新 / Last updated: 2026-10-20</p>
+      <p class="meta">最後更新 / Last updated: 2026-10-22</p>
       <div class="lang"><a href="#zh">繁體中文</a><a href="#en">English</a></div>
 
       <section lang="zh-HK" id="zh">
@@ -50,6 +50,10 @@
             <strong>相片：</strong
             >你上載嘅頭像（版主批准後先公開）同對戰證明相片（只限該場對戰嘅參與者同版主睇到，對戰完結
             30 日後刪除）。
+          </li>
+          <li>
+            <strong>帖文：</strong
+            >你喺螺心社群動態發佈嘅相片帖文（相片、說明文字、標籤同觀眾設定）、你嘅留言同讚好，以及你對帖文或留言作出嘅舉報。帖文只有你揀嘅觀眾睇到（全港玩家，或者只限朋友；受管理帳戶一律只限朋友）；讚好數目同邊個讚好只有帖文作者同管理員睇到；管理員可以睇到等待審核、被舉報同已移除嘅帖文。每張相片喺其他人睇到之前，都會先經騰訊雲數據萬象（CI）圖片審核自動檢查；檢查未能確定嘅相片會等管理員決定。說明文字同留言會經過粗口過濾，管理員可以移除帖文同刪除留言。
           </li>
           <li>
             <strong>見面確認嘅位置：</strong>只喺你同意進行嘅見面確認期間（最多兩分鐘、只限使用 App
@@ -87,7 +91,9 @@
             48
             小時內有冇爭議、拒絕或敗仗，以及有冇互相封鎖；以及被舉報帳戶嘅開戶日數、是否家長管理帳戶、是否停權、開放中嘅舉報數目、過往個案同處分、段位。唔會送出電郵地址、帳戶
             ID
-            或位置。分析結果只有管理員睇到，唔會自動處分任何人；涉及兒童安全嘅舉報唔會送出分析。騰訊雲按其服務條款處理呢啲資料。
+            或位置。如果被舉報嘅係帖文或留言，會以同樣方式分析帖文嘅說明文字、帖文嘅留言（連同留言者嘅用戶名同時間）同被舉報玩家最近
+            20
+            篇公開帖文嘅說明文字；相片永遠唔會送去呢個模型。分析結果只有管理員睇到，唔會自動處分任何人；涉及兒童安全嘅舉報唔會送出分析。騰訊雲按其服務條款處理呢啲資料。
           </li>
         </ul>
         <h2>我哋點樣用</h2>
@@ -99,12 +105,14 @@
           資料儲存喺 Supabase（資料庫同檔案儲存）。當機報告由 Sentry 處理。推送通知經 Expo
           送出。如果你開啟咗分享使用數據，相關數據由 Google Analytics for Firebase
           處理；如果你喺網站接受咗 Cookie，網站分析由 Google Analytics 處理。舉報分析由 騰訊雲
-          TokenHub（智譜 GLM 模型，新加坡）為管理員處理。以上服務只為運作 App 而處理資料。
+          TokenHub（智譜 GLM 模型，新加坡）為管理員處理。帖文相片儲存喺騰訊雲（COS
+          物件儲存，香港區），並由騰訊雲數據萬象（CI，香港區）檢查。以上服務只為運作 App
+          而處理資料。
         </p>
         <h2>年齡</h2>
         <p>
           BeyHK 供 13 歲或以上人士使用；註冊時需要確認年齡。13
-          歲以下嘅玩家只可以用家長或監護人開設同管理嘅帳戶（受管理帳戶）：聊天、私訊、上載相片同顯示地區預設關閉，要監護人
+          歲以下嘅玩家只可以用家長或監護人開設同管理嘅帳戶（受管理帳戶）：聊天、私訊、上載相片、發帖同顯示地區預設關閉，要監護人
           PIN 先可以開啟。聊天室預設有未成年人在場，因此提供封鎖、檢舉、粗口過濾同版主刪除功能。
         </p>
         <h2>保留同刪除</h2>
@@ -113,7 +121,9 @@
           刪除帳戶」刪除帳戶：登入資料、個人檔案、訊息、套裝同物品會被刪除；對戰紀錄會匿名化為「已刪除玩家」以保持其他玩家嘅排名正確。詳見<a
             href="data-deletion.html"
             >刪除資料</a
-          >。
+          >。你刪除嘅帖文，或者管理員移除嘅帖文，會即時隱藏，30
+          日後連同相片一併刪除；被圖片審核封鎖嘅相片會另存一份副本作審核證據，90
+          日後刪除。刪除帳戶會一併刪除你嘅帖文、留言、讚好同相片。
         </p>
         <h2>聯絡</h2>
         <p class="notice">
@@ -143,6 +153,17 @@
             <strong>Photos:</strong> the avatar you upload (public only after a moderator approves
             it) and match-proof photos (seen only by that match's players and moderators, deleted 30
             days after the match settles).
+          </li>
+          <li>
+            <strong>Posts:</strong> the photo posts you publish to the 螺心 community feed (the
+            photo, caption, tags and audience), your comments and likes, and the reports you file on
+            posts or comments. A post is seen only by the audience you choose (all Hong Kong
+            players, or friends only; a managed account always posts to friends only); the like
+            count and who liked a post are seen only by its author and moderators; moderators can
+            see posts that are waiting for review, reported or removed. Each photo is checked
+            automatically by Tencent Cloud CI image moderation before anyone else can see it, and a
+            photo the check is unsure about waits for a moderator. Captions and comments pass a
+            profanity filter, and moderators can remove posts and delete comments.
           </li>
           <li>
             <strong>Location for the meet-up check:</strong> your precise location, only during a
@@ -197,8 +218,11 @@
             reported account's age in days, whether it is a parent-managed account, whether it is
             banned, the number of open reports against the account, its past cases and actions, and
             its tier. No email address, account id or location is sent. Only moderators see the
-            result and nothing is actioned automatically; child-safety reports are never sent.
-            Tencent Cloud processes this data under its service terms.
+            result and nothing is actioned automatically; child-safety reports are never sent. When
+            a post or comment is reported, the post's caption, its comments (with each commenter's
+            handle and time) and the reported player's 20 most recent public captions are analysed
+            the same way; photos are never sent to this model. Tencent Cloud processes this data
+            under its service terms.
           </li>
         </ul>
         <h2>How we use it</h2>
@@ -213,23 +237,27 @@
           Sentry. Push notifications are delivered through Expo. If you opted in to usage stats,
           they are processed by Google Analytics for Firebase; if you accepted cookies on the
           website, its analytics are processed by Google Analytics. Report triage for moderators is
-          processed by Tencent Cloud TokenHub (Zhipu GLM model, Singapore). These providers process
-          data only to operate the app.
+          processed by Tencent Cloud TokenHub (Zhipu GLM model, Singapore). Post photos are stored
+          in Tencent Cloud COS and checked by Tencent Cloud CI, both in the Hong Kong region. These
+          providers process data only to operate the app.
         </p>
         <h2>Age</h2>
         <p>
           BeyHK is for people aged 13 and over; you confirm this at sign-up. A player under 13 can
           only use an account that a parent or guardian sets up and keeps (a managed account): chat,
-          direct messages, photo uploads and showing a district start off, and only the guardian PIN
-          turns them on. Chat assumes minors are present, so blocking, reporting, a profanity filter
-          and moderator deletion are always on.
+          direct messages, photo uploads, posting and showing a district start off, and only the
+          guardian PIN turns them on. Chat assumes minors are present, so blocking, reporting, a
+          profanity filter and moderator deletion are always on.
         </p>
         <h2>Retention and deletion</h2>
         <p>
           You can delete your account at any time in Settings → Delete account: your login, profile,
           messages, decks and inventory are removed; match history is anonymised as "Deleted player"
           so other players' rankings stay correct. See
-          <a href="/data-deletion.html">Delete your data</a>.
+          <a href="/data-deletion.html">Delete your data</a>. A post you delete, or one a moderator
+          removes, is hidden at once and deleted with its photo after 30 days; a copy of a photo the
+          image check blocked is kept as moderation evidence for 90 days, then deleted. Deleting
+          your account also deletes your posts, comments, likes and photos.
         </p>
         <h2>Contact</h2>
         <p class="notice">
