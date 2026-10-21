@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-HK">
+  <title>BeyHK 網誌</title>
+  <id>https://beyhk.sh/blog/</id>
+  <link rel="alternate" href="https://beyhk.sh/blog/" />
+  <link rel="self" href="https://beyhk.sh/blog/feed.xml" type="application/atom+xml" />
+  <updated>2026-10-21T04:52:29.012Z</updated>
+  <author><name>BeyHK</name></author>
+
+</feed>

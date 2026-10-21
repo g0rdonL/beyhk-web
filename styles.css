@@ -889,6 +889,204 @@ a.store:hover {
   color: var(--text-2);
 }
 
+/* Blog (scripts/site/blog/render.ts). Generated in CI, so it uses the same sheet and tokens. */
+.blog-index {
+  padding: 40px 0 0;
+}
+.blog-index > h1 {
+  margin-bottom: 16px;
+}
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 0 8px;
+}
+.post header {
+  margin-bottom: 24px;
+}
+.post h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 12px;
+}
+.post .meta {
+  font-size: 13px;
+  color: var(--text-3);
+}
+.post figure {
+  margin: 24px 0;
+}
+.post figcaption {
+  font-size: 13px;
+  color: var(--text-3);
+  margin-top: 8px;
+}
+.post .kg-image-card img {
+  width: 100%;
+  height: auto;
+}
+.post-tags {
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+  padding-top: 16px;
+}
+.post-tags .tags {
+  font-size: 13px;
+  color: var(--text-3);
+}
+.post-tags .tags a + a {
+  margin-left: 8px;
+}
+.post-list {
+  list-style: none;
+  margin: 8px 0 24px;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.post-list > li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+.post-list h2 {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+.post-list h2 a {
+  color: var(--text-1);
+  text-decoration: none;
+}
+.post-list h2 a:hover {
+  color: var(--sky);
+}
+.post-list .meta {
+  font-size: 13px;
+  color: var(--text-3);
+}
+.post-list p:last-child {
+  margin-bottom: 0;
+}
+.read-more {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.pagination {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0 0;
+}
+.pagination a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-1);
+  text-decoration: none;
+}
+.pagination a:hover {
+  border-color: var(--sky);
+}
+
+/* Ghost Koenig cards kept by scripts/site/blog/sanitize.ts */
+.link-card {
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--sky);
+  background: var(--surface);
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+.link-card a {
+  text-decoration: none;
+}
+.kg-callout-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 16px;
+  margin: 24px 0;
+}
+.kg-callout-emoji {
+  font-weight: 700;
+  color: var(--text-2);
+}
+.kg-callout-text p:last-child {
+  margin-bottom: 0;
+}
+.kg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-1);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.kg-btn:hover {
+  border-color: var(--sky);
+}
+.kg-bookmark-card {
+  margin: 24px 0;
+}
+.kg-bookmark-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 16px;
+  color: var(--text-1);
+  text-decoration: none;
+}
+.kg-bookmark-title {
+  font-weight: 700;
+  color: var(--text-1);
+}
+.kg-bookmark-description {
+  font-size: 14px;
+  color: var(--text-2);
+}
+.kg-bookmark-metadata {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+.kg-bookmark-icon {
+  width: 16px;
+  height: 16px;
+}
+.kg-bookmark-thumbnail img {
+  width: 120px;
+  height: auto;
+}
+.kg-gallery-card {
+  margin: 24px 0;
+}
+.kg-gallery-container {
+  display: grid;
+  gap: 8px;
+}
+.kg-gallery-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.kg-gallery-image img {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
