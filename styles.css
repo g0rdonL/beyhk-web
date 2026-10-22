@@ -1017,6 +1017,62 @@ a.store:hover {
 .kg-callout-text p:last-child {
   margin-bottom: 0;
 }
+/* Ghost callout colours: blue/accent is the highlight (e.g. a conclusion), red is a warning
+   only (coral never decorates), every other colour stays neutral. */
+.kg-callout-card-blue,
+.kg-callout-card-accent {
+  background: var(--sky-12);
+  border-color: var(--sky-40);
+  border-left: 3px solid var(--sky);
+}
+.kg-callout-card-blue .kg-callout-emoji,
+.kg-callout-card-accent .kg-callout-emoji {
+  color: var(--sky);
+}
+.kg-callout-card-red {
+  background: var(--coral-14);
+  border-color: var(--coral-40);
+  border-left: 2px solid var(--coral);
+}
+/* Toggle cards, rendered as details/summary by the sanitiser: FAQ dropdowns, no script. */
+.kg-toggle-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  margin: 12px 0;
+}
+.kg-toggle-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+.kg-toggle-heading::-webkit-details-marker {
+  display: none;
+}
+.kg-toggle-heading::after {
+  content: '+';
+  flex: none;
+  color: var(--sky);
+  font-weight: 700;
+}
+.kg-toggle-card[open] > .kg-toggle-heading::after {
+  content: '\2212';
+}
+.kg-toggle-heading-text {
+  margin: 0;
+  font-size: 1rem;
+}
+.kg-toggle-content {
+  padding: 0 16px 16px;
+  color: var(--text-2);
+}
+.kg-toggle-content p:last-child {
+  margin-bottom: 0;
+}
 .kg-btn {
   display: inline-flex;
   align-items: center;
@@ -1033,6 +1089,33 @@ a.store:hover {
 }
 .kg-btn:hover {
   border-color: var(--sky);
+}
+.kg-btn-accent {
+  background: var(--sky);
+  border-color: var(--sky);
+  color: var(--on-sky);
+}
+.kg-btn-accent:hover {
+  border-color: var(--text-1);
+}
+.kg-button-card {
+  margin: 24px 0;
+}
+.kg-align-center {
+  text-align: center;
+}
+.kg-store-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.kg-store-cta-text {
+  flex-basis: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
 }
 .kg-bookmark-card {
   margin: 24px 0;
