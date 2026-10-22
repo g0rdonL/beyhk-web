@@ -1,4 +1,11 @@
 {
+  "rewrites": [
+    { "source": "/i/*", "destination": "/404.html" },
+    { "source": "/invite/*", "destination": "/404.html" },
+    { "source": "/match/confirm/*", "destination": "/404.html" },
+    { "source": "/player/*", "destination": "/404.html" },
+    { "source": "/p/*", "destination": "/404.html" }
+  ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
