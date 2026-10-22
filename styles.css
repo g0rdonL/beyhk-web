@@ -1060,6 +1060,120 @@ a.store:hover {
   flex-wrap: wrap;
   gap: 8px;
 }
+.post-share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.post-share-inline {
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+  padding-top: 16px;
+}
+.post-share-inline + .post-tags {
+  border-top: 0;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  .post-share-inline {
+    display: none;
+  }
+  .post-share-inline + .post-tags {
+    border-top: 1px solid var(--border);
+    margin-top: 32px;
+  }
+}
+.post-share-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+}
+.post-share-links {
+  display: flex;
+  gap: 4px;
+}
+.post-share-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--text-2);
+  border: 1px solid transparent;
+}
+.post-share-links a:hover,
+.post-share-links a:focus-visible {
+  color: var(--sky);
+  border-color: var(--border);
+}
+.post-related {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 32px;
+}
+.post-related > h2 {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+.post-related ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.post-related-card {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.post-related-card:hover {
+  border-color: var(--sky-40);
+}
+.post-related-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--elevated);
+}
+.post-related-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-related-blank {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.post-related-text {
+  padding: 14px 16px 16px;
+}
+.post-related-tag {
+  font-size: 13px;
+  color: var(--sky);
+  text-decoration: none;
+}
+.post-related-text h3 {
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 4px 0 8px;
+}
+.post-related-text h3 a {
+  color: var(--text-1);
+  text-decoration: none;
+}
+.post-related-text h3 a:hover {
+  color: var(--sky);
+}
+.post-related-text .meta {
+  margin: 0;
+}
 .btn-sky {
   background: var(--sky);
   color: var(--on-sky);
@@ -1171,34 +1285,48 @@ a.store:hover {
   background: var(--surface);
   margin: 12px 0;
 }
+.kg-toggle-card[open] {
+  border-color: var(--sky-40);
+  background: var(--sky-7);
+}
 .kg-toggle-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  min-height: 44px;
-  padding: 12px 16px;
+  min-height: 52px;
+  padding: 14px 18px;
   cursor: pointer;
   list-style: none;
 }
 .kg-toggle-heading::-webkit-details-marker {
   display: none;
 }
+/* A chevron: down when closed, up when open. */
 .kg-toggle-heading::after {
-  content: '+';
+  content: '';
   flex: none;
-  color: var(--sky);
-  font-weight: 700;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-right: 2px solid var(--sky);
+  border-bottom: 2px solid var(--sky);
+  transform: rotate(45deg);
 }
 .kg-toggle-card[open] > .kg-toggle-heading::after {
-  content: '\2212';
+  margin-top: 4px;
+  transform: rotate(-135deg);
+}
+.kg-toggle-heading:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: -2px;
 }
 .kg-toggle-heading-text {
   margin: 0;
   font-size: 1rem;
 }
 .kg-toggle-content {
-  padding: 0 16px 16px;
+  padding: 0 18px 18px;
   color: var(--text-2);
 }
 .kg-toggle-content p:last-child {
