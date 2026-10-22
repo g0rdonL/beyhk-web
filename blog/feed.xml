@@ -4,7 +4,22 @@
   <id>https://beyhk.sh/blog/</id>
   <link rel="alternate" href="https://beyhk.sh/blog/" />
   <link rel="self" href="https://beyhk.sh/blog/feed.xml" type="application/atom+xml" />
-  <updated>2026-10-22T03:54:02.885Z</updated>
+  <updated>2026-10-22T04:19:51.000Z</updated>
   <author><name>BeyHK</name></author>
-
+  <entry>
+    <id>https://beyhk.sh/blog/cx-seventeen/</id>
+    <title>CX-17 一覽：規格、部件同重點</title>
+    <link rel="alternate" href="https://beyhk.sh/blog/cx-seventeen/" />
+    <published>2026-10-22T12:19:50.000+08:00</published>
+    <updated>2026-10-22T12:19:50.000+08:00</updated>
+    <summary>CX-17 即 Random Booster Vol. 10：完整陣容、UnicornDelta 獎品每盒抽中率、Triple Style 玩法，同香港玩家入手嘅兩個途徑。</summary>
+  </entry>
+  <entry>
+    <id>https://beyhk.sh/blog/beyblade-x/</id>
+    <title>Beyblade X 入門：規格、部件同設計全解</title>
+    <link rel="alternate" href="https://beyhk.sh/blog/beyblade-x/" />
+    <published>2026-10-22T12:19:49.000+08:00</published>
+    <updated>2026-10-22T12:19:49.000+08:00</updated>
+    <summary>Beyblade X 嘅規格其實就係三個部件加一個場地機關：呢篇講解 Blade、Ratchet、Bit 系統、部件編碼、BX／UX／CX 三條產品線，同官方 4 分制計分。</summary>
+  </entry>
 </feed>
