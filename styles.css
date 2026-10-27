@@ -1060,6 +1060,27 @@ a.store:hover {
   flex-wrap: wrap;
   gap: 8px;
 }
+.post-community {
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--sky);
+  padding: 28px 20px;
+  margin: 40px 0 32px;
+  text-align: center;
+}
+.post-community h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--text-1);
+  margin: 0 0 8px;
+}
+.post-community p {
+  max-width: 46ch;
+  margin: 0 auto 20px;
+  color: var(--text-2);
+}
 .post-share {
   display: flex;
   align-items: center;
