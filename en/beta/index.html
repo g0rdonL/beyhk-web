@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Closed beta · BeyHK</title>
+    <meta
+      name="description"
+      content="Sign up for the 螺Fun - BeyHK closed beta: try it on iOS or Android before the public launch in November 2026." />
+    <link rel="canonical" href="https://beyhk.sh/en/beta/" />
+    <link rel="alternate" hreflang="zh-HK" href="https://beyhk.sh/beta/" />
+    <link rel="alternate" hreflang="en" href="https://beyhk.sh/en/beta/" />
+    <link rel="alternate" hreflang="x-default" href="https://beyhk.sh/beta/" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/consent.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BeyHK" />
+    <meta property="og:title" content="Closed beta · BeyHK" />
+    <meta
+      property="og:description"
+      content="Sign up for the 螺Fun - BeyHK closed beta: try it on iOS or Android before the public launch in November 2026." />
+    <meta property="og:url" content="https://beyhk.sh/en/beta/" />
+    <meta property="og:image" content="https://beyhk.sh/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0A1218" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#E4EEF4" media="(prefers-color-scheme: light)" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="skip" href="#content">Skip to content</a>
+      <div class="bar">
+        <a class="brand" href="/en/"
+          ><span class="mark" style="--mark-size: 36px" aria-hidden="true"
+            ><img src="/img/beyhk-mark.svg" alt="" width="36" height="36" /></span
+          ><span class="wordmark">BeyHK</span></a
+        >
+        <a class="lang-switch" href="/beta/" lang="zh-HK" hreflang="zh-HK" title="繁體中文">繁</a>
+      </div>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="/en/">Home</a><a href="/en/ranking/">Ranking</a
+        ><a href="/en/how-it-works/">How it works</a><a href="/en/events/">Events</a
+        ><a href="/en/community/">Community</a><a href="/en/news/">News</a
+        ><a href="/en/blog/">Blog</a><a href="/en/parents/">Parents & safety</a
+        ><a href="/en/about/">About</a><a href="/en/join/">Download</a>
+      </nav>
+    </header>
+    <main id="content" class="site-main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Closed beta</p>
+          <h1>Try BeyHK first</h1>
+          <p class="lede">
+            螺Fun - BeyHK launches publicly in November 2026. Before that, we are inviting a group
+            of players to try it on iOS (TestFlight) and Android (Google Play testing) and help find
+            bugs.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-secondary chamfer-1" href="/en/how-it-works/">See how it works</a>
+          </div>
+        </div>
+      </section>
+      <section class="block" id="signup">
+        <h2>Sign up</h2>
+        <form class="beta-form chamfer-2" data-beta-form>
+          <label class="field"
+            ><span>Email</span
+            ><input
+              type="email"
+              name="email"
+              required
+              maxlength="254"
+              autocomplete="email"
+              inputmode="email"
+              aria-describedby="beta-email-hint" /><small id="beta-email-hint"
+              >Your tester invite goes here. For a player aged 13–17, a parent’s email.</small
+            ></label
+          >
+          <fieldset class="field">
+            <legend>Phone</legend>
+            <div class="choices">
+              <label class="choice"
+                ><input type="radio" name="platform" value="ios" required /> iOS</label
+              ><label class="choice"
+                ><input type="radio" name="platform" value="android" /> Android</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="field">
+            <legend>Who is signing up</legend>
+            <div class="choices">
+              <label class="choice"
+                ><input type="radio" name="signer" value="adult" required /> Me, a player aged 18 or
+                over</label
+              ><label class="choice"
+                ><input type="radio" name="signer" value="guardian" /> A parent or guardian, for a
+                player aged 13–17</label
+              >
+            </div>
+          </fieldset>
+          <label class="field"
+            ><span>Handle you would like (optional)</span
+            ><input
+              type="text"
+              name="handle"
+              pattern="[a-z0-9_]{3,20}"
+              maxlength="20"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+              aria-describedby="beta-handle-hint" /><small id="beta-handle-hint"
+              >3–20 lowercase letters, numbers or underscores. Not reserved until you sign up in the
+              app.</small
+            ></label
+          >
+          <label class="trap" aria-hidden="true"
+            >Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"
+          /></label>
+          <label class="choice agree"
+            ><input type="checkbox" name="consent" value="yes" required />
+            <span
+              >I am 18 or over and agree that BeyHK uses this email to send a closed beta invite, as
+              set out in the <a href="/privacy.html#beta-en">privacy policy</a>.</span
+            ></label
+          >
+          <p class="form-error" role="alert" data-beta-status hidden></p>
+          <button type="submit" class="btn btn-primary chamfer-1" data-label="Join the closed beta">
+            Join the closed beta
+          </button>
+        </form>
+        <div class="notice beta-done" data-beta-done tabindex="-1" hidden>
+          <h3>You are on the list</h3>
+          <p>
+            Places are limited. If you get one, the TestFlight (iOS) or Google Play invite arrives
+            at that email. Meanwhile, follow
+            <a href="https://www.instagram.com/beyhkfun" rel="noopener">Instagram @beyhkfun</a>.
+          </p>
+        </div>
+        <noscript
+          ><p class="notice">
+            This form needs JavaScript. Message us on
+            <a href="https://www.instagram.com/beyhkfun" rel="noopener">Instagram @beyhkfun</a>
+            instead.
+          </p></noscript
+        >
+        <script src="/beta.js" defer></script>
+      </section>
+      <section class="block">
+        <h2>Good to know</h2>
+        <ul class="plain">
+          <li>Places are limited, and not every signup gets an invite.</li>
+          <li>
+            Whoever signs up must be 18 or over. For a player aged 13–17, a parent or guardian signs
+            up with their own email.
+          </li>
+          <li>
+            Players under 13 use a parent-managed account, which the closed beta does not cover yet.
+            See <a href="/en/parents/">what parents should know</a>.
+          </li>
+          <li>
+            We use the email only to send the tester invite. Every signup is deleted when the closed
+            beta ends.
+          </li>
+          <li>
+            To take your signup off the list, email
+            <a href="mailto:privacy@beyhk.sh">privacy@beyhk.sh</a>.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="cols">
+        <div>
+          <p class="foot-brand">
+            <span class="mark" style="--mark-size: 28px" aria-hidden="true"
+              ><img src="/img/beyhk-mark.svg" alt="" width="28" height="28" /></span
+            ><span class="wordmark">BeyHK</span>
+          </p>
+          <p>The unofficial community app for Beyblade X players in Hong Kong</p>
+        </div>
+        <nav aria-label="Privacy policy">
+          <a href="/privacy.html">Privacy policy</a>
+          <a href="/terms.html">Terms of use</a>
+          <a href="/data-deletion.html">Delete your data</a>
+          <button type="button" class="cookie-settings" data-consent-open hidden>
+            Cookie settings
+          </button>
+        </nav>
+        <nav aria-label="Follow">
+          <a href="https://www.instagram.com/beyhkfun" rel="me noopener">Instagram @beyhkfun</a>
+          <a href="https://www.threads.com/@beyhkfun" rel="me noopener">Threads @beyhkfun</a>
+          <a href="https://www.facebook.com/profile.php?id=61595220414128" rel="me noopener"
+            >Facebook</a
+          >
+          <a href="https://chat.whatsapp.com/GS6Yz5AJGaOHzvh4RnxtAM" rel="noopener"
+            >WhatsApp community</a
+          >
+        </nav>
+      </div>
+      <p class="disclaimer">
+        BeyHK is not affiliated with Takara Tomy or Hasbro. Beyblade is a trademark of its owners.
+        For players aged 13 and over; under-13s through a parent-managed account.
+      </p>
+      <p class="copyright">© 2026 BeyHK</p>
+    </footer>
+  </body>
+</html>

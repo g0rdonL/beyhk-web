@@ -1649,3 +1649,108 @@ nav.pages a {
     flex: 0 0 140px;
   }
 }
+
+/* Closed beta form (/beta/): web/beta.js posts it. The submit button is the page's one lime moment. */
+.beta-form {
+  display: grid;
+  gap: 20px;
+  max-width: 34em;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.beta-form[hidden] {
+  display: none;
+}
+.beta-form .field {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.beta-form .field > span,
+.beta-form legend {
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.beta-form small {
+  font-size: 13px;
+  color: var(--text-3);
+}
+.beta-form input[type='email'],
+.beta-form input[type='text'] {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text-1);
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 0;
+}
+.beta-form input:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 1px;
+}
+.beta-form input:user-invalid {
+  border-color: var(--coral);
+}
+.beta-form .choices {
+  display: grid;
+  gap: 8px;
+}
+.beta-form .choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.beta-form .choice input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0;
+  accent-color: var(--sky);
+}
+.beta-form .agree {
+  color: var(--text-2);
+  font-size: 15px;
+}
+.beta-form .trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.beta-form .btn {
+  justify-self: start;
+  cursor: pointer;
+}
+.beta-form .btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+.form-error {
+  margin: 0;
+  padding: 12px 16px;
+  color: var(--text-1);
+  background: var(--coral-14);
+  border-left: 3px solid var(--coral);
+}
+.beta-done {
+  max-width: 34em;
+  border-left: 3px solid var(--sky);
+}
+.beta-done:focus {
+  outline: none;
+}
+.beta-done h3 {
+  margin-top: 0;
+}
