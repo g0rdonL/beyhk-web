@@ -296,6 +296,7 @@ strong {
 .hero .lede {
   font-size: 19px;
   max-width: 34em;
+  text-wrap: balance;
 }
 .hero .eyebrow {
   display: inline-flex;
