@@ -925,6 +925,56 @@ a.store:hover {
   width: 100%;
   height: auto;
 }
+/* Tables in a post. Ghost emits bare tables and the sanitiser strips every style and class,
+   so the look lives here. The writing rule is seven columns at most with a header row; the
+   wrapper (article.ts) scrolls a wide table sideways on a phone instead of crushing the cells. */
+.post .post-table {
+  overflow-x: auto;
+  margin: 24px 0;
+  -webkit-overflow-scrolling: touch;
+}
+.post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.post th,
+.post td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-2);
+}
+.post th {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--text-1);
+  border-top: 0;
+}
+.post td:first-child {
+  white-space: nowrap;
+  color: var(--text-1);
+}
+.post tbody tr:nth-child(even) td {
+  background: var(--elevated);
+}
+/* Below the post's own width the wrapper scrolls, so a header keeps its line instead of
+   wrapping into a tall row for columns the reader has not scrolled to yet. */
+@media (max-width: 719px) {
+  .post th {
+    white-space: nowrap;
+  }
+}
+
 .post-tags {
   border-top: 1px solid var(--border);
   margin-top: 32px;
