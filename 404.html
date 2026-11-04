@@ -39,33 +39,66 @@
         ><a href="/blog/">網誌</a><a href="/parents/">家長同安全</a><a href="/about/">關於</a
         ><a href="/join/">下載</a>
       </nav>
+      <script>
+        (function (nav) {
+          var here = nav.querySelector('[aria-current]');
+          if (here) {
+            var n = nav.getBoundingClientRect();
+            var h = here.getBoundingClientRect();
+            if (h.right > n.right || h.left < n.left) {
+              nav.scrollLeft += h.left - n.left - (n.width - h.width) / 2;
+            }
+          }
+          function edges() {
+            var max = nav.scrollWidth - nav.clientWidth;
+            nav.classList.toggle('more-start', nav.scrollLeft > 1);
+            nav.classList.toggle('more-end', nav.scrollLeft < max - 1);
+          }
+          edges();
+          nav.addEventListener('scroll', edges, { passive: true });
+          addEventListener('resize', edges);
+          addEventListener('load', edges);
+        })(document.currentScript.previousElementSibling);
+      </script>
     </header>
     <main id="content" class="legal">
-      <h1>用 BeyHK App 開啟</h1>
-      <p>
-        呢條連結係 BeyHK App 嘅邀請、對戰確認、玩家檔案或者帖文。安裝咗 App
-        就會自動開啟；未安裝可以先下載。
-      </p>
-      <p>
-        This link is a BeyHK invite, match confirmation, player profile or post. It opens in the app
-        when installed; otherwise install the app first.
-      </p>
-      <section id="invite" hidden>
+      <div id="not-found" hidden>
+        <h1>搵唔到呢頁</h1>
+        <p>呢個網址冇嘢，可能打錯咗，或者頁面已經搬咗。</p>
+        <p>There is nothing at this address. It may be mistyped, or the page has moved.</p>
+        <nav class="pages">
+          <a href="/">主頁 · Home</a>
+          <a href="/blog/">網誌 · Blog</a>
+          <a href="/join/">下載 App · Get the app</a>
+        </nav>
+      </div>
+      <div id="app-link">
+        <h1>用 BeyHK App 開啟</h1>
         <p>
-          朋友邀請你玩 BeyHK。裝咗 App
-          之後再撳一次呢條連結，登記時就會自動用佢嘅邀請碼；或者喺第一場對戰之前，喺「個人」頁輸入：
+          呢條連結係 BeyHK App 嘅邀請、對戰確認、玩家檔案或者帖文。安裝咗 App
+          就會自動開啟；未安裝可以先下載。
         </p>
         <p>
-          A friend invited you to BeyHK. Once the app is installed, tap this link again and their
-          code is applied when you sign up, or enter it on your Profile before your first match:
+          This link is a BeyHK invite, match confirmation, player profile or post. It opens in the
+          app when installed; otherwise install the app first.
         </p>
-        <p class="code" id="invite-code"></p>
-      </section>
-      <nav class="pages">
-        <a id="open" href="#">喺 App 開啟 · Open in app</a>
-        <a href="/join/">下載 App · Get the app</a>
-        <a href="/">主頁 · Home</a>
-      </nav>
+        <section id="invite" hidden>
+          <p>
+            朋友邀請你玩 BeyHK。裝咗 App
+            之後再撳一次呢條連結，登記時就會自動用佢嘅邀請碼；或者喺第一場對戰之前，喺「個人」頁輸入：
+          </p>
+          <p>
+            A friend invited you to BeyHK. Once the app is installed, tap this link again and their
+            code is applied when you sign up, or enter it on your Profile before your first match:
+          </p>
+          <p class="code" id="invite-code"></p>
+        </section>
+        <nav class="pages">
+          <a id="open" href="#">喺 App 開啟 · Open in app</a>
+          <a href="/join/">下載 App · Get the app</a>
+          <a href="/">主頁 · Home</a>
+        </nav>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="cols">
@@ -105,6 +138,14 @@
     <script>
       // Same path, app scheme: a fallback for phones where the universal link did not verify.
       (function () {
+        // EdgeOne serves this page for the app-link paths (edgeone.json rewrites, 200) and for
+        // every unknown path (404). Only the app-link paths get the open-in-app copy.
+        if (!/^\/(i|invite|match\/confirm|player|p)\//.test(location.pathname)) {
+          document.getElementById('app-link').hidden = true;
+          document.getElementById('not-found').hidden = false;
+          document.title = '搵唔到呢頁 · Page not found · BeyHK';
+          return;
+        }
         var target = 'beyhk://' + location.pathname.replace(/^\//, '') + location.search;
         var link = document.getElementById('open');
         link.setAttribute('href', target);

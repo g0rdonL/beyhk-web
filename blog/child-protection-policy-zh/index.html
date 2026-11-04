@@ -63,6 +63,27 @@
         ><a href="/blog/" aria-current="page">網誌</a><a href="/parents/">家長同安全</a
         ><a href="/about/">關於</a><a href="/join/">下載</a>
       </nav>
+      <script>
+        (function (nav) {
+          var here = nav.querySelector('[aria-current]');
+          if (here) {
+            var n = nav.getBoundingClientRect();
+            var h = here.getBoundingClientRect();
+            if (h.right > n.right || h.left < n.left) {
+              nav.scrollLeft += h.left - n.left - (n.width - h.width) / 2;
+            }
+          }
+          function edges() {
+            var max = nav.scrollWidth - nav.clientWidth;
+            nav.classList.toggle('more-start', nav.scrollLeft > 1);
+            nav.classList.toggle('more-end', nav.scrollLeft < max - 1);
+          }
+          edges();
+          nav.addEventListener('scroll', edges, { passive: true });
+          addEventListener('resize', edges);
+          addEventListener('load', edges);
+        })(document.currentScript.previousElementSibling);
+      </script>
     </header>
     <main id="content" class="site-main">
       <div class="post-layout">
@@ -102,7 +123,7 @@
             歲的用戶，不論其帳戶類型為何。
           </p>
           <h2 id="beyhk-的五大安全原則">BeyHK 的五大安全原則</h2>
-          <p>請參閱家長安全指南頁面（For Parents）«internal-link → /parents/»</p>
+          <p>請參閱家長安全指南頁面（For Parents）<a href="/parents/">家長同安全</a></p>
           <p>BeyHK 的社群安全體系建基於以下五項原則，適用於應用程式內的所有社交功能：</p>
           <ol>
             <li>
@@ -191,7 +212,7 @@
             BeyHK 絕不收集以下資料：電話號碼、真實姓名及 GPS
             位置；亦不會出售用戶數據。對家長而言，最重要的一點是：BeyHK
             不會投放廣告，無論是在應用程式內還是網站上。兒童不應成為商業化的目標對象。完整詳情請參閱私隱政策：
-            «internal-link → /privacy.html»。
+            <a href="/privacy.html">私隱政策</a>。
           </p>
           <p>
             兒童的數據與其他用戶的數據一樣，均受香港《個人資料（私隱）條例》（PDPO）保障。家長可透過聯絡電郵申請查閱或更正其子女的個人資料。
@@ -259,8 +280,8 @@
           <h2 id="總結">總結</h2>
           <p>
             BeyHK 兒童保護政策從設計之初便已納入考量：13 歲及以上的玩家可擁有獨立帳戶，13 歲以下的兒童由家長透過 PIN 碼全面掌控，社交功能預設關閉，舉報工具觸手可及。家長需要做的一件事：在讓孩子使用應用程式之前，先閱讀 For Parents 頁面
-            «internal-link →
-            /parents/»，並只開啟孩子需要的功能。BeyHK 是香港非官方的 Beyblade X 社群應用程式：免費、無廣告、不出售數據。孩子能安全地玩耍，是這個社群繁榮的前提。
+            <a href="/parents/">家長同安全</a
+            >，並只開啟孩子需要的功能。BeyHK 是香港非官方的 Beyblade X 社群應用程式：免費、無廣告、不出售數據。孩子能安全地玩耍，是這個社群繁榮的前提。
           </p>
           <h2 id="常見問題-faqs">常見問題（FAQs）</h2>
           <h3>BeyHK 適合 13 歲以下的兒童嗎？</h3>
