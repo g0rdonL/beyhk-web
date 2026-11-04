@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/i/*", "destination": "/404.html" },
+    { "source": "/l/*", "destination": "/404.html" },
     { "source": "/invite/*", "destination": "/404.html" },
     { "source": "/match/confirm/*", "destination": "/404.html" },
     { "source": "/player/*", "destination": "/404.html" },

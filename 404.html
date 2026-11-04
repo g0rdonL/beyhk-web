@@ -140,7 +140,7 @@
       (function () {
         // EdgeOne serves this page for the app-link paths (edgeone.json rewrites, 200) and for
         // every unknown path (404). Only the app-link paths get the open-in-app copy.
-        if (!/^\/(i|invite|match\/confirm|player|p)\//.test(location.pathname)) {
+        if (!/^\/(i|l|invite|match\/confirm|player|p)\//.test(location.pathname)) {
           document.getElementById('app-link').hidden = true;
           document.getElementById('not-found').hidden = false;
           document.title = '搵唔到呢頁 · Page not found · BeyHK';

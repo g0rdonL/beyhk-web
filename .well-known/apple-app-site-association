@@ -8,6 +8,7 @@
           { "/": "/match/confirm/*", "comment": "confirm QR" },
           { "/": "/player/*", "comment": "public profile" },
           { "/": "/i/*", "comment": "invite link (referral code)" },
+          { "/": "/l/*", "comment": "legion invite link" },
           { "/": "/p/*", "comment": "feed post" }
         ]
       }
