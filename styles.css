@@ -944,6 +944,16 @@ a.store:hover {
   font-size: 13px;
   color: var(--text-3);
 }
+/* The cover (Ghost feature image), between the header and the body. Covers are 1200×630. */
+.post-cover {
+  margin: 0 0 32px;
+}
+.post-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
 .post figure {
   margin: 24px 0;
 }
@@ -1300,6 +1310,31 @@ a.store:hover {
   background: var(--surface);
   border: 1px solid var(--border);
   padding: 20px;
+}
+/* A card with a cover: thumbnail above the text on a phone, beside it from tablet up. */
+.post-summary.has-cover {
+  display: grid;
+  gap: 16px;
+}
+.post-summary-media {
+  display: block;
+  aspect-ratio: 1200 / 630;
+  overflow: hidden;
+  background: var(--elevated);
+  border: 1px solid var(--border);
+}
+.post-summary-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 720px) {
+  .post-summary.has-cover {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
 }
 .post-list h2 {
   font-size: 24px;
