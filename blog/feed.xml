@@ -4,7 +4,7 @@
   <id>https://beyhk.sh/blog/</id>
   <link rel="alternate" href="https://beyhk.sh/blog/" />
   <link rel="self" href="https://beyhk.sh/blog/feed.xml" type="application/atom+xml" />
-  <updated>2026-11-12T08:49:12.000Z</updated>
+  <updated>2026-11-12T09:20:22.000Z</updated>
   <author><name>BeyHK</name></author>
   <entry>
     <id>https://beyhk.sh/blog/ux-ten/</id>
@@ -29,6 +29,14 @@
     <published>2026-10-31T14:37:24.000+08:00</published>
     <updated>2026-11-04T20:24:22.000+08:00</updated>
     <summary>BeyHK 供 13 歲及以上的玩家使用。了解我們的兒童保護政策：家長管理帳戶、行為規則、舉報方式，以及我們如何保護年輕玩家。</summary>
+  </entry>
+  <entry>
+    <id>https://beyhk.sh/blog/cx-seventeen/</id>
+    <title>CX-17 一覽：規格、部件同重點</title>
+    <link rel="alternate" href="https://beyhk.sh/blog/cx-seventeen/" />
+    <published>2026-10-22T12:19:50.000+08:00</published>
+    <updated>2026-11-12T17:20:14.000+08:00</updated>
+    <summary>CX-17 即 Random Booster Vol. 10：完整陣容、UnicornDelta 獎品每盒抽中率、Triple Style 玩法，同香港玩家入手嘅兩個途徑。</summary>
   </entry>
   <entry>
     <id>https://beyhk.sh/blog/beyblade-x/</id>
