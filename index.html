@@ -6,7 +6,7 @@
     <title>螺Fun - BeyHK — 香港 Beyblade X 對戰排名</title>
     <meta
       name="description"
-      content="香港 Beyblade X 玩家嘅對戰排名 App：記錄對戰、對手確認、攀升排名。零廣告。非官方社群 App，for Beyblade X。" />
+      content="香港 Beyblade X 對戰排名 App：記錄對戰、對手確認先計分，全港同各區排行榜、店舖地圖同賽事一個 App 搞掂。免費、零廣告，非官方社群 App。" />
     <link rel="canonical" href="https://beyhk.sh/" />
     <link rel="alternate" hreflang="zh-HK" href="https://beyhk.sh/" />
     <link rel="alternate" hreflang="en" href="https://beyhk.sh/en/" />
@@ -19,13 +19,103 @@
     <meta property="og:title" content="螺Fun - BeyHK — 香港 Beyblade X 對戰排名" />
     <meta
       property="og:description"
-      content="香港 Beyblade X 玩家嘅對戰排名 App：記錄對戰、對手確認、攀升排名。零廣告。非官方社群 App，for Beyblade X。" />
+      content="香港 Beyblade X 對戰排名 App：記錄對戰、對手確認先計分，全港同各區排行榜、店舖地圖同賽事一個 App 搞掂。免費、零廣告，非官方社群 App。" />
     <meta property="og:url" content="https://beyhk.sh/" />
     <meta property="og:image" content="https://beyhk.sh/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="zh_HK" />
+    <meta property="og:locale:alternate" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh-HK",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "BeyHK 係咪官方 App？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "唔係。BeyHK 係香港 Beyblade X 玩家嘅非官方社群 App，與 Takara Tomy 或 Hasbro 並無關聯。Beyblade 係其擁有者嘅商標。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "BeyHK 使唔使錢？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "唔使。BeyHK 免費使用，零廣告，亦冇 App 內購買。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "排名點樣計？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK 用 Glicko-2 評分，每個玩家都有一個評分同誤差範圍（±）。每場對戰要對手掃 QR 或者用推送確認，評分先會變。打夠 5 場定位賽就會上榜，分青銅、白銀、黃金、白金四個段位，有全港同各區排行榜。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "對戰要幾耐內確認？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "對手要喺 48 小時內確認。評分只會喺對手確認之後先變。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "點樣搵對手？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "App 入面有全港總聊天室、每間店舖嘅聊天室同每個段位嘅聊天室。喺聊天室直接「挑戰」對方，對方接受後就會開始記錄對戰。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "比賽結果計唔計入排名？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "唔計。主辦人可以喺 App 內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果，但賽事結果唔會影響排名。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "賽季幾時完？完咗會點？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "第零季由推出一直去到 2027 年 1 月 1 日。賽季結束時，評分會向 1500 回調一半，每人會收到一份賽季回顧，包括名次、段位、戰績、連勝同最常用 Blade。之後每個季度一個賽季。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "幾多歲可以用？家長可以點樣控制？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK 適合 13 歲或以上人士使用。未滿 13 歲嘅玩家要由家長用自己嘅電郵設立受管理帳戶，再用家長 PIN 決定開唔開聊天、私訊、朋友、相片同見面確認功能。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "BeyHK 幾時推出？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK 而家係封閉測試階段，你可以報名加入。iOS 同 Android 版本即將喺 App Store 同 Google Play 推出。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "店舖同賽事主辦人可以點樣用 BeyHK？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "每間店舖喺 App 入面都有自己嘅聊天室，店舖同場地亦會喺地圖上顯示。主辦人可以喺 App 內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果。"
+            }
+          }
+        ]
+      }
+    </script>
     <meta name="theme-color" content="#0A1218" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#E4EEF4" media="(prefers-color-scheme: light)" />
   </head>
@@ -71,11 +161,11 @@
     <main id="content" class="site-main">
       <section class="hero">
         <div>
-          <p class="eyebrow">for Beyblade X · 香港</p>
-          <h1>一個真實、經對手確認嘅香港 H2H 排名</h1>
+          <p class="eyebrow">Beyblade X · 香港</p>
+          <h1>香港 Beyblade X 對戰排名，每場都經對手確認</h1>
           <p class="lede">
-            記錄對戰，對手確認，攀升排名。BeyHK 係香港 Beyblade X 玩家嘅非官方社群
-            App。零廣告，永遠都係。
+            螺Fun BeyHK 係香港 Beyblade X 玩家嘅非官方社群
+            App：記錄對戰、對手確認先計分，仲有全港同各區排行榜、聊天室、店舖地圖同賽事。免費、零廣告。
           </p>
           <div class="cta-row">
             <a class="btn btn-primary chamfer-1" href="/join/">下載 App</a
@@ -152,6 +242,30 @@
           </div>
         </div>
       </section>
+      <section class="block" id="start">
+        <h2>點樣開始？三步上榜</h2>
+        <ol class="steps">
+          <li class="chamfer-1">
+            <div>
+              <h3>開帳戶</h3>
+              <p>13 歲或以上可以自己開；未滿 13 歲由家長設立受管理帳戶。</p>
+            </div>
+          </li>
+          <li class="chamfer-1">
+            <div>
+              <h3>打 5 場定位賽</h3>
+              <p>每場打完，對手掃 QR 或者用推送確認，限時 48 小時。</p>
+            </div>
+          </li>
+          <li class="chamfer-1">
+            <div>
+              <h3>上榜</h3>
+              <p>攞到青銅、白銀、黃金或者白金段位，睇埋全港同自己地區嘅排名。</p>
+            </div>
+          </li>
+        </ol>
+        <p><a href="/how-it-works/">睇詳細玩法 →</a></p>
+      </section>
       <section class="block">
         <h2>第零季開放中</h2>
         <p>
@@ -168,14 +282,109 @@
         <p><a href="/ranking/">了解排名點樣計</a> · <a href="/how-it-works/">點樣開始</a></p>
       </section>
       <section class="block">
+        <h2>啱啱開始玩 Beyblade X？</h2>
+        <p>
+          唔使識晒先嚟。準備好你嘅 Beyblade X 同發射器，喺 App
+          地圖搵間附近嘅店舖或者場地，再喺店舖聊天室約人打第一場。打完 5
+          場定位賽，你就會知道自己喺香港排第幾。
+        </p>
+        <p><a href="/how-it-works/">睇新手指南 →</a></p>
+      </section>
+      <section class="block">
         <h2>俾家長</h2>
         <p>
           BeyHK 適合 13 歲或以上人士使用。未滿 13 歲？家長可以用自己嘅電郵設立受管理帳戶，用家長 PIN
           決定開唔開聊天、私訊、朋友、相片同見面確認。<a href="/parents/">家長同安全</a>
         </p>
       </section>
+      <section class="block" id="faq">
+        <h2>常見問題</h2>
+        <div class="faq">
+          <h3>BeyHK 係咪官方 App？</h3>
+          <p>
+            唔係。BeyHK 係香港 Beyblade X 玩家嘅非官方社群 App，與 Takara Tomy 或 Hasbro
+            並無關聯。Beyblade 係其擁有者嘅商標。
+          </p>
+          <h3>BeyHK 使唔使錢？</h3>
+          <p>唔使。BeyHK 免費使用，零廣告，亦冇 App 內購買。</p>
+          <h3>排名點樣計？</h3>
+          <p>
+            BeyHK 用 Glicko-2 評分，每個玩家都有一個評分同誤差範圍（±）。每場對戰要對手掃 QR
+            或者用推送確認，評分先會變。打夠 5
+            場定位賽就會上榜，分青銅、白銀、黃金、白金四個段位，有全港同各區排行榜。
+          </p>
+          <h3>對戰要幾耐內確認？</h3>
+          <p>對手要喺 48 小時內確認。評分只會喺對手確認之後先變。</p>
+          <h3>點樣搵對手？</h3>
+          <p>
+            App
+            入面有全港總聊天室、每間店舖嘅聊天室同每個段位嘅聊天室。喺聊天室直接「挑戰」對方，對方接受後就會開始記錄對戰。
+          </p>
+          <h3>比賽結果計唔計入排名？</h3>
+          <p>
+            唔計。主辦人可以喺 App
+            內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果，但賽事結果唔會影響排名。
+          </p>
+          <h3>賽季幾時完？完咗會點？</h3>
+          <p>
+            第零季由推出一直去到 2027 年 1 月 1 日。賽季結束時，評分會向 1500
+            回調一半，每人會收到一份賽季回顧，包括名次、段位、戰績、連勝同最常用
+            Blade。之後每個季度一個賽季。
+          </p>
+          <h3>幾多歲可以用？家長可以點樣控制？</h3>
+          <p>
+            BeyHK 適合 13 歲或以上人士使用。未滿 13
+            歲嘅玩家要由家長用自己嘅電郵設立受管理帳戶，再用家長 PIN
+            決定開唔開聊天、私訊、朋友、相片同見面確認功能。
+          </p>
+          <h3>BeyHK 幾時推出？</h3>
+          <p>
+            BeyHK 而家係封閉測試階段，你可以報名加入。iOS 同 Android 版本即將喺 App Store 同 Google
+            Play 推出。
+          </p>
+          <h3>店舖同賽事主辦人可以點樣用 BeyHK？</h3>
+          <p>
+            每間店舖喺 App 入面都有自己嘅聊天室，店舖同場地亦會喺地圖上顯示。主辦人可以喺 App
+            內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果。
+          </p>
+        </div>
+      </section>
+      <section class="block" id="glossary">
+        <h2>術語小辭典</h2>
+        <dl class="glossary">
+          <dt>H2H 對戰</dt>
+          <dd>一對一對戰（head-to-head）。</dd>
+          <dt>對手確認</dt>
+          <dd>對手掃 QR 或者用推送確認結果，對戰先會計入排名。</dd>
+          <dt>定位賽</dt>
+          <dd>頭 5 場對戰，用嚟定你嘅起始排名同段位。</dd>
+          <dt>段位</dt>
+          <dd>排行榜上嘅四個級別：青銅、白銀、黃金、白金。</dd>
+          <dt><a href="/ranking/">Glicko-2</a></dt>
+          <dd>BeyHK 用嘅評分系統，除咗評分，仲會計「誤差範圍」。打得越多，誤差越細，排名越準。</dd>
+          <dt><a href="/ranking/">誤差範圍（±）</a></dt>
+          <dd>系統對你嘅評分有幾肯定。數字越細，代表評分越準。</dd>
+          <dt>單淘汰</dt>
+          <dd>輸一場就出局，贏家繼續晉級。</dd>
+          <dt>瑞士輪</dt>
+          <dd>每輪配對戰績相近嘅玩家，輸咗唔使即刻出局，打完指定輪數再計名次。</dd>
+          <dt>賽季回調</dt>
+          <dd>賽季完結時，評分向 1500 回調一半。</dd>
+        </dl>
+      </section>
+      <section class="block" id="latest">
+        <h2>最新網誌</h2>
+        <!-- latest-posts --><div class="grid cols-3"><article class="card chamfer-2"><p class="label"><time datetime="2026-11-13T16:58:33.000+08:00">2026-11-13</time></p><h3><a href="/blog/bx-forty-eight/">BX-48 一覽：規格、部件同重點</a></h3><p>Random Booster Vol. 9 復刻五把日本限定金屬塗層刃，配全新固鎖軸心組合：BX-48 嘅規格、實測刃重同香港入手建議全部喺呢篇。</p><p><a class="read-more" href="/blog/bx-forty-eight/">閱讀全文 →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-12T16:49:12.000+08:00">2026-11-12</time></p><h3><a href="/blog/ux-ten/">Beyblade X UX-10 改造套裝 U 全面解析：規格、零件及實戰評測</a></h3><p>Beyblade X UX-10 改造套裝 U 13 件零件逐件拆解：刃擊環重量、核輪與軸心實測，香港市場價格分析，以及 72 種配搭之中哪些組合最值得一試。</p><p><a class="read-more" href="/blog/ux-ten/">閱讀全文 →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-04T10:36:33.000+08:00">2026-11-04</time></p><h3><a href="/blog/beyblade-hk-leaderboard/">Beyblade HK leaderboard 香港：排名、賽事同社區一覽</a></h3><p>香港嘅 Beyblade X 排名榜有三個：官方 G1 至 G3 賽事、社區 Elo 榜同 App 內對戰排行榜；呢篇逐一比較，教你點樣上榜。</p><p><a class="read-more" href="/blog/beyblade-hk-leaderboard/">閱讀全文 →</a></p></article></div><!-- /latest-posts -->
+        <p><a href="/blog/">睇全部網誌 →</a></p>
+      </section>
     </main>
     <footer class="site-footer">
+      <nav class="foot-links" aria-label="探索">
+        <a href="/ranking/">香港 Beyblade X 排名</a>
+        <a href="/events/">香港 Beyblade X 賽事</a>
+        <a href="/how-it-works/">點樣玩 BeyHK</a>
+        <a href="/parents/">家長同安全</a>
+      </nav>
       <div class="cols">
         <div>
           <p class="foot-brand">

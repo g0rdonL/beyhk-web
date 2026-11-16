@@ -6,7 +6,7 @@
     <title>螺Fun - BeyHK — Hong Kong H2H ranking for Beyblade X</title>
     <meta
       name="description"
-      content="Hong Kong's head-to-head Beyblade X ranking app: log a match, your opponent confirms, climb the ladder. No ads. An unofficial community app, for Beyblade X." />
+      content="Hong Kong's Beyblade X ranking app: log matches your opponent confirms, climb city-wide and district ladders, find shops and events, all in one app. Free, no ads, an unofficial community app." />
     <link rel="canonical" href="https://beyhk.sh/en/" />
     <link rel="alternate" hreflang="zh-HK" href="https://beyhk.sh/" />
     <link rel="alternate" hreflang="en" href="https://beyhk.sh/en/" />
@@ -19,13 +19,103 @@
     <meta property="og:title" content="螺Fun - BeyHK — Hong Kong H2H ranking for Beyblade X" />
     <meta
       property="og:description"
-      content="Hong Kong's head-to-head Beyblade X ranking app: log a match, your opponent confirms, climb the ladder. No ads. An unofficial community app, for Beyblade X." />
+      content="Hong Kong's Beyblade X ranking app: log matches your opponent confirms, climb city-wide and district ladders, find shops and events, all in one app. Free, no ads, an unofficial community app." />
     <meta property="og:url" content="https://beyhk.sh/en/" />
     <meta property="og:image" content="https://beyhk.sh/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="zh_HK" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is BeyHK an official app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. BeyHK is the unofficial community app for Beyblade X players in Hong Kong and is not affiliated with Takara Tomy or Hasbro. Beyblade is a trademark of its owners."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does BeyHK cost anything?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. BeyHK is free, has no ads and has no in-app purchases."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the ranking work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK uses Glicko-2: every player has a rating and a deviation (±). A rating only moves after the opponent confirms the match by QR scan or push. Five placement matches put you on the ladder, in one of four tiers (Bronze, Silver, Gold, Platinum), city-wide and by district."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does my opponent have to confirm a match?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your opponent has 48 hours to confirm. The rating only changes once they do."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find opponents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The app has a Hong Kong-wide chat room, a room for every shop and one for every tier. Challenge someone straight from chat; once they accept, the match log opens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do tournament results count towards the ranking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Organizers can run single-elimination or Swiss tournaments in the app with judges recording results on the spot, but tournament results never touch the ranking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does the season end, and what happens then?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Season 0 runs from launch until 1 January 2027. At season end ratings move halfway back to 1500 and everyone gets a season recap: rank, tier, record, best streak and most-played blade. Seasons then run by calendar quarter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What age is BeyHK for, and what can parents control?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK is for players aged 13 and over. A player under 13 needs a parent to set up a managed account with the parent’s own email; a guardian PIN then decides whether chat, direct messages, friends, photos and the meet-up check are on."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does BeyHK launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BeyHK is in a closed beta and you can sign up to join. The iOS and Android versions are coming soon to the App Store and Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can shops and tournament organizers use BeyHK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every shop has its own chat room in the app, and shops and venues appear on the map. Organizers can run single-elimination or Swiss tournaments in the app, with judges recording results on the spot."
+            }
+          }
+        ]
+      }
+    </script>
     <meta name="theme-color" content="#0A1218" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#E4EEF4" media="(prefers-color-scheme: light)" />
   </head>
@@ -73,10 +163,11 @@
       <section class="hero">
         <div>
           <p class="eyebrow">for Beyblade X · Hong Kong</p>
-          <h1>A real, opponent-confirmed ranking for Hong Kong</h1>
+          <h1>Hong Kong Beyblade X ranking, every match confirmed by your opponent</h1>
           <p class="lede">
-            Log a match, your opponent confirms, climb the ladder. BeyHK is the unofficial community
-            app for Beyblade X players in Hong Kong. No ads, ever.
+            BeyHK (螺Fun) is the unofficial community app for Beyblade X players in Hong Kong: log
+            matches that your opponent confirms, climb city-wide and district ladders, chat with
+            local players and find shops and events. Free, no ads.
           </p>
           <div class="cta-row">
             <a class="btn btn-primary chamfer-1" href="/en/join/">Get the app</a
@@ -159,6 +250,35 @@
           </div>
         </div>
       </section>
+      <section class="block" id="start">
+        <h2>How to start: three steps to the ladder</h2>
+        <ol class="steps">
+          <li class="chamfer-1">
+            <div>
+              <h3>Create an account</h3>
+              <p>
+                Aged 13 or over, sign up yourself; under 13, a parent sets up a managed account.
+              </p>
+            </div>
+          </li>
+          <li class="chamfer-1">
+            <div>
+              <h3>Play 5 placement matches</h3>
+              <p>After each match your opponent confirms by QR scan or push, within 48 hours.</p>
+            </div>
+          </li>
+          <li class="chamfer-1">
+            <div>
+              <h3>Get on the ladder</h3>
+              <p>
+                Earn a Bronze, Silver, Gold or Platinum tier and see where you rank in Hong Kong and
+                your district.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <p><a href="/en/how-it-works/">How it works in detail →</a></p>
+      </section>
       <section class="block">
         <h2>Season 0 is open</h2>
         <p>
@@ -180,6 +300,15 @@
         </p>
       </section>
       <section class="block">
+        <h2>New to Beyblade X?</h2>
+        <p>
+          You don’t need to know it all first. Bring your Beyblade X and launcher, find a shop or
+          venue near you on the app’s map, and set up your first match in the shop’s chat room.
+          After five placement matches you’ll know where you rank in Hong Kong.
+        </p>
+        <p><a href="/en/how-it-works/">Getting started →</a></p>
+      </section>
+      <section class="block">
         <h2>For parents</h2>
         <p>
           BeyHK is for players aged 13 and over. Under 13? A parent sets up a managed account with
@@ -187,8 +316,108 @@
           photos and the meet-up check are on. <a href="/en/parents/">Parents & safety</a>
         </p>
       </section>
+      <section class="block" id="faq">
+        <h2>Questions</h2>
+        <div class="faq">
+          <h3>Is BeyHK an official app?</h3>
+          <p>
+            No. BeyHK is the unofficial community app for Beyblade X players in Hong Kong and is not
+            affiliated with Takara Tomy or Hasbro. Beyblade is a trademark of its owners.
+          </p>
+          <h3>Does BeyHK cost anything?</h3>
+          <p>No. BeyHK is free, has no ads and has no in-app purchases.</p>
+          <h3>How does the ranking work?</h3>
+          <p>
+            BeyHK uses Glicko-2: every player has a rating and a deviation (±). A rating only moves
+            after the opponent confirms the match by QR scan or push. Five placement matches put you
+            on the ladder, in one of four tiers (Bronze, Silver, Gold, Platinum), city-wide and by
+            district.
+          </p>
+          <h3>How long does my opponent have to confirm a match?</h3>
+          <p>Your opponent has 48 hours to confirm. The rating only changes once they do.</p>
+          <h3>How do I find opponents?</h3>
+          <p>
+            The app has a Hong Kong-wide chat room, a room for every shop and one for every tier.
+            Challenge someone straight from chat; once they accept, the match log opens.
+          </p>
+          <h3>Do tournament results count towards the ranking?</h3>
+          <p>
+            No. Organizers can run single-elimination or Swiss tournaments in the app with judges
+            recording results on the spot, but tournament results never touch the ranking.
+          </p>
+          <h3>When does the season end, and what happens then?</h3>
+          <p>
+            Season 0 runs from launch until 1 January 2027. At season end ratings move halfway back
+            to 1500 and everyone gets a season recap: rank, tier, record, best streak and
+            most-played blade. Seasons then run by calendar quarter.
+          </p>
+          <h3>What age is BeyHK for, and what can parents control?</h3>
+          <p>
+            BeyHK is for players aged 13 and over. A player under 13 needs a parent to set up a
+            managed account with the parent’s own email; a guardian PIN then decides whether chat,
+            direct messages, friends, photos and the meet-up check are on.
+          </p>
+          <h3>When does BeyHK launch?</h3>
+          <p>
+            BeyHK is in a closed beta and you can sign up to join. The iOS and Android versions are
+            coming soon to the App Store and Google Play.
+          </p>
+          <h3>How can shops and tournament organizers use BeyHK?</h3>
+          <p>
+            Every shop has its own chat room in the app, and shops and venues appear on the map.
+            Organizers can run single-elimination or Swiss tournaments in the app, with judges
+            recording results on the spot.
+          </p>
+        </div>
+      </section>
+      <section class="block" id="glossary">
+        <h2>Glossary</h2>
+        <dl class="glossary">
+          <dt>H2H match</dt>
+          <dd>A one-on-one match (head-to-head).</dd>
+          <dt>Opponent confirmation</dt>
+          <dd>
+            Your opponent confirms the result by QR scan or push; only then does the match count
+            towards the ranking.
+          </dd>
+          <dt>Placement matches</dt>
+          <dd>Your first 5 matches, which set your starting rank and tier.</dd>
+          <dt>Tier</dt>
+          <dd>The four levels of the ladder: Bronze, Silver, Gold and Platinum.</dd>
+          <dt><a href="/en/ranking/">Glicko-2</a></dt>
+          <dd>
+            The rating system BeyHK uses. Besides a rating it tracks a deviation: the more you play,
+            the smaller the deviation and the more accurate your rank.
+          </dd>
+          <dt><a href="/en/ranking/">Deviation (±)</a></dt>
+          <dd>
+            How sure the system is about your rating. The smaller the number, the more accurate the
+            rating.
+          </dd>
+          <dt>Single elimination</dt>
+          <dd>Lose once and you are out; winners advance.</dd>
+          <dt>Swiss rounds</dt>
+          <dd>
+            Each round pairs players with similar records. A loss does not knock you out; final
+            places are set after a fixed number of rounds.
+          </dd>
+          <dt>Season reset</dt>
+          <dd>At season end every rating moves halfway back to 1500.</dd>
+        </dl>
+      </section>
+      <section class="block" id="latest">
+        <h2>Latest from the blog</h2>
+        <!-- latest-posts --><div class="grid cols-3"><article class="card chamfer-2"><p class="label"><time datetime="2026-11-13T16:58:46.000+08:00">2026-11-13</time></p><h3><a href="/en/blog/bx-forty-eight/">BX-48 at a Glance: Specs, Parts &amp; Essentials</a></h3><p>Random Booster Vol. 9 revives five limited metal coat blades with new part pairings: here…</p><p><a class="read-more" href="/en/blog/bx-forty-eight/">Read more →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-12T16:49:10.000+08:00">2026-11-12</time></p><h3><a href="/en/blog/ux-ten/">UX-10 101: Specs, Parts &amp; What Matters</a></h3><p>The 13-part UX-10 Customize Set U broken down: every blade, ratchet and bit measured, HK p…</p><p><a class="read-more" href="/en/blog/ux-ten/">Read more →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-04T09:35:24.000+08:00">2026-11-04</time></p><h3><a href="/en/blog/beyblade-hk-leaderboard/">Beyblade HK Leaderboard: Rankings, Events &amp; Community in Hong Kong</a></h3><p>Hong Kong has three Beyblade X leaderboards: the official G1 to G3 circuit, community Elo…</p><p><a class="read-more" href="/en/blog/beyblade-hk-leaderboard/">Read more →</a></p></article></div><!-- /latest-posts -->
+        <p><a href="/en/blog/">All blog posts →</a></p>
+      </section>
     </main>
     <footer class="site-footer">
+      <nav class="foot-links" aria-label="Explore">
+        <a href="/en/ranking/">Hong Kong Beyblade X ranking</a>
+        <a href="/en/events/">Beyblade X events in Hong Kong</a>
+        <a href="/en/how-it-works/">How BeyHK works</a>
+        <a href="/en/parents/">Parents and safety</a>
+      </nav>
       <div class="cols">
         <div>
           <p class="foot-brand">

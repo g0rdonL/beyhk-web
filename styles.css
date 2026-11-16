@@ -477,6 +477,32 @@ ol.steps p {
   margin: 0;
 }
 
+/* Homepage FAQ: every answer stays visible, matching the FAQPage structured data */
+.faq {
+  max-width: 38em;
+}
+.faq h3 {
+  font-size: 19px;
+  margin: 24px 0 4px;
+}
+.faq h3:first-child {
+  margin-top: 8px;
+}
+
+dl.glossary {
+  max-width: 38em;
+  margin: 8px 0 24px;
+}
+dl.glossary dt {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-top: 16px;
+}
+dl.glossary dd {
+  margin: 4px 0 0;
+  color: var(--text-2);
+}
+
 ul.plain {
   padding-left: 1.2em;
   margin: 0 0 1em;
@@ -1577,10 +1603,19 @@ a.store:hover {
   border-top: 1px solid var(--border);
   background: var(--surface);
 }
+/* Descriptive links to the key pages, on every page (the nav uses one-word labels) */
+.site-footer nav.foot-links {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 24px var(--gutter) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
 .site-footer .cols {
   max-width: var(--measure);
   margin: 0 auto;
-  padding: 32px var(--gutter) 8px;
+  padding: 16px var(--gutter) 8px;
   display: grid;
   gap: 24px;
 }
