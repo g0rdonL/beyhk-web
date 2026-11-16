@@ -9,7 +9,8 @@
           { "/": "/player/*", "comment": "public profile" },
           { "/": "/i/*", "comment": "invite link (referral code)" },
           { "/": "/l/*", "comment": "legion invite link" },
-          { "/": "/p/*", "comment": "feed post" }
+          { "/": "/p/*", "comment": "feed post" },
+          { "/": "/battle/join/*", "comment": "casual battle QR (BEYHK-806)" }
         ]
       }
     ]
