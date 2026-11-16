@@ -1,21 +1,159 @@
 {
+  "redirects": [
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ranking",
+      "destination": "/ranking/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/how-it-works/",
+      "statusCode": 301
+    },
+    {
+      "source": "/events",
+      "destination": "/events/",
+      "statusCode": 301
+    },
+    {
+      "source": "/community",
+      "destination": "/community/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/parents",
+      "destination": "/parents/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/join",
+      "destination": "/join/",
+      "statusCode": 301
+    },
+    {
+      "source": "/beta",
+      "destination": "/beta/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ranking",
+      "destination": "/en/ranking/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/how-it-works",
+      "destination": "/en/how-it-works/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/events",
+      "destination": "/en/events/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/community",
+      "destination": "/en/community/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/news",
+      "destination": "/en/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/parents",
+      "destination": "/en/parents/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/about",
+      "destination": "/en/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/join",
+      "destination": "/en/join/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/beta",
+      "destination": "/en/beta/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog",
+      "destination": "/en/blog/",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
-    { "source": "/i/*", "destination": "/404.html" },
-    { "source": "/l/*", "destination": "/404.html" },
-    { "source": "/invite/*", "destination": "/404.html" },
-    { "source": "/match/confirm/*", "destination": "/404.html" },
-    { "source": "/player/*", "destination": "/404.html" },
-    { "source": "/p/*", "destination": "/404.html" },
-    { "source": "/battle/join/*", "destination": "/404.html" }
+    {
+      "source": "/i/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/l/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/invite/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/match/confirm/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/player/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/p/*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/battle/join/*",
+      "destination": "/404.html"
+    }
   ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
-      "headers": [{ "key": "Content-Type", "value": "application/json" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     },
     {
       "source": "/*",
-      "headers": [{ "key": "Strict-Transport-Security", "value": "max-age=31536000" }]
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ]
     }
   ]
 }
