@@ -139,7 +139,7 @@
     },
     {
       "source": "/p/*",
-      "destination": "/404.html"
+      "destination": "/p.html"
     },
     {
       "source": "/battle/join/*",

@@ -344,9 +344,10 @@ strong {
 }
 /* The homepage's Ask AI row, under the hero buttons (scripts/site/askai.ts). The assistants'
    glyphs take the text colour: their brand colours are outside the palette. */
+/* One line on every width: the short label and four 44px buttons fit a 320px screen. */
 .ask-ai {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 8px;
   margin-top: 20px;
@@ -355,6 +356,7 @@ strong {
 }
 .ask-ai span {
   margin-right: 4px;
+  white-space: nowrap;
 }
 .ask-ai a {
   display: inline-flex;
@@ -400,6 +402,10 @@ strong {
 .btn-primary {
   background: var(--lime-fill);
   color: var(--on-lime);
+}
+.btn-sky {
+  background: var(--sky);
+  color: var(--on-sky);
 }
 .btn-secondary {
   color: var(--text-1);
@@ -509,6 +515,28 @@ ol.steps p {
   margin: 0;
 }
 
+/* Homepage closing call to action, under the FAQ */
+.join-cta-card {
+  max-width: 44em;
+  padding: 32px 28px;
+  border: 1px solid var(--sky-40);
+  background: var(--sky-7);
+}
+.join-cta-card h2 {
+  margin-top: 0;
+}
+.join-cta-card p {
+  max-width: 36em;
+}
+.join-cta-card .cta-row {
+  margin-top: 20px;
+}
+@media (max-width: 560px) {
+  .join-cta-card {
+    padding: 24px 18px;
+  }
+}
+
 /* Homepage FAQ: collapsible rows, no script. Closed answers stay in the HTML, so the FAQPage
    structured data still matches them. The marker reads [+] closed and [−] open. */
 .faq {
@@ -555,20 +583,6 @@ ol.steps p {
 .faq details > p {
   margin: -8px 0 20px;
   max-width: 38em;
-}
-
-dl.glossary {
-  max-width: 38em;
-  margin: 8px 0 24px;
-}
-dl.glossary dt {
-  font-family: var(--font-display);
-  font-weight: 700;
-  margin-top: 16px;
-}
-dl.glossary dd {
-  margin: 4px 0 0;
-  color: var(--text-2);
 }
 
 ul.plain {
