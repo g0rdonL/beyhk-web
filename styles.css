@@ -509,16 +509,52 @@ ol.steps p {
   margin: 0;
 }
 
-/* Homepage FAQ: every answer stays visible, matching the FAQPage structured data */
+/* Homepage FAQ: collapsible rows, no script. Closed answers stay in the HTML, so the FAQPage
+   structured data still matches them. The marker reads [+] closed and [−] open. */
 .faq {
-  max-width: 38em;
+  max-width: 44em;
+}
+.faq details {
+  border-bottom: 1px solid var(--border);
+}
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary::after {
+  content: '[+]';
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-3);
+}
+.faq details[open] > summary::after {
+  content: '[\2212]';
+  color: var(--text-2);
+}
+.faq summary:hover::after {
+  color: var(--sky);
+}
+.faq summary:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 2px;
 }
 .faq h3 {
   font-size: 19px;
-  margin: 24px 0 4px;
+  margin: 0;
 }
-.faq h3:first-child {
-  margin-top: 8px;
+.faq details > p {
+  margin: -8px 0 20px;
+  max-width: 38em;
 }
 
 dl.glossary {
@@ -2034,4 +2070,190 @@ nav.pages a {
 }
 .beta-done h3 {
   margin-top: 0;
+}
+
+/* Homepage latest-posts carousel (scripts/site/blog/home.ts). A scroll-snap row that works
+   without JavaScript; the inline script in the block wires the dots and arrows. */
+.latest-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 20px;
+}
+.latest-head h2 {
+  margin: 0;
+}
+.latest-all {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-1);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.latest-all:hover,
+.latest-all:focus-visible {
+  border-color: var(--sky);
+  color: var(--sky);
+}
+.latest-track {
+  --gap: 16px;
+  display: flex;
+  gap: var(--gap);
+  list-style: none;
+  margin: 0;
+  padding: 0 0 4px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+.latest-track::-webkit-scrollbar {
+  display: none;
+}
+.latest-track:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 4px;
+}
+.latest-track > li {
+  /* Phones show one card and a peek of the next; wider screens three and a peek. */
+  flex: 0 0 82%;
+  scroll-snap-align: start;
+}
+@media (min-width: 640px) {
+  .latest-track > li {
+    flex-basis: calc((100% - var(--gap)) / 2.2);
+  }
+}
+@media (min-width: 960px) {
+  .latest-track > li {
+    flex-basis: calc((100% - 2 * var(--gap)) / 3.2);
+  }
+}
+.latest-card {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.latest-card:hover {
+  border-color: var(--sky-40);
+}
+.latest-media {
+  display: block;
+  /* Ghost covers are 1200×630 social cards with their own type: show them whole. */
+  aspect-ratio: 1200 / 630;
+  overflow: hidden;
+  background: var(--elevated);
+}
+.latest-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.latest-blank {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.latest-text {
+  padding: 16px 20px 20px;
+}
+.latest-text .label {
+  font-size: 14px;
+  color: var(--text-3);
+  margin: 0 0 6px;
+}
+.latest-text h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  margin: 0 0 8px;
+}
+.latest-text h3 a {
+  color: var(--text-1);
+  text-decoration: none;
+}
+.latest-text h3 a:hover {
+  color: var(--sky);
+}
+.latest-text p:last-child {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 15px;
+}
+.latest-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+}
+.latest-controls[hidden] {
+  display: none;
+}
+.latest-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.latest-dots button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.latest-dots button::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--neutral-46);
+  transition: width 0.2s ease;
+}
+.latest-dots button[aria-current]::before {
+  width: 24px;
+  background: var(--sky);
+}
+.latest-dots button[aria-current] {
+  width: 36px;
+}
+.latest-dots button[hidden] {
+  display: none;
+}
+.latest-arrows {
+  display: flex;
+  gap: 8px;
+}
+.latest-arrows button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-1);
+  font-size: 20px;
+  cursor: pointer;
+}
+.latest-arrows button:hover:not(:disabled) {
+  border-color: var(--sky);
+  color: var(--sky);
+}
+.latest-arrows button:disabled {
+  color: var(--disabled);
+  cursor: default;
+}
+@media (prefers-reduced-motion: reduce) {
+  .latest-dots button::before {
+    transition: none;
+  }
 }

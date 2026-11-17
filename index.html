@@ -329,6 +329,61 @@
         </div>
         <p><a href="/ranking/">了解排名點樣計</a> · <a href="/how-it-works/">點樣開始</a></p>
       </section>
+      <section class="block latest" id="latest">
+        <div class="latest-head">
+          <h2>最新網誌</h2>
+          <a class="latest-all" href="/blog/">睇全部網誌 →</a>
+        </div>
+        <!-- latest-posts --><div class="latest-carousel"><ul class="latest-track" tabindex="0" aria-label="最新網誌"><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/beyblade-five-four/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-f0e7e23bc069.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-11-17T11:18:00.000+08:00">2026-11-17</time></p><h3><a href="/blog/beyblade-five-four/">模型完整資料：規格・零件・設計重點</a></h3><p>由 BX、UX、CX 編碼規則到 Starter、Booster、Random Booster 嘅入手策略，一篇睇清 Beyblade X 模型點樣揀。</p></div></article></li><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/beyblade-x-beginner-guide/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-bbf9f9e812df.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-11-16T21:59:46.000+08:00">2026-11-16</time></p><h3><a href="/blog/beyblade-x-beginner-guide/">Beyblade X 新手指南：香港玩家點樣開始</a></h3><p>香港 Beyblade X 新手由零開始：要買啲咩、去邊度搵人打、第一場點樣記錄同確認，打夠 5 場定位賽就上榜。</p></div></article></li><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/bx-forty-eight/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-a7ee091a354b.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-11-13T16:58:33.000+08:00">2026-11-13</time></p><h3><a href="/blog/bx-forty-eight/">BX-48 一覽：規格、部件同重點</a></h3><p>Random Booster Vol. 9 復刻五把日本限定金屬塗層刃，配全新固鎖軸心組合：BX-48 嘅規格、實測刃重同香港入手建議全部喺呢篇。</p></div></article></li><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/ux-ten/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-5848b163c83e.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-11-12T16:49:12.000+08:00">2026-11-12</time></p><h3><a href="/blog/ux-ten/">Beyblade X UX-10 改造套裝 U 全面解析：規格、零件及實戰評測</a></h3><p>Beyblade X UX-10 改造套裝 U 13 件零件逐件拆解：刃擊環重量、核輪與軸心實測，香港市場價格分析，以及 72 種配搭之中哪些組合最值得一試。</p></div></article></li><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/beyblade-hk-leaderboard/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-d7230c8d05b7.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-11-04T10:36:33.000+08:00">2026-11-04</time></p><h3><a href="/blog/beyblade-hk-leaderboard/">Beyblade HK leaderboard 香港：排名、賽事同社區一覽</a></h3><p>香港嘅 Beyblade X 排名榜有三個：官方 G1 至 G3 賽事、社區 Elo 榜同 App 內對戰排行榜；呢篇逐一比較，教你點樣上榜。</p></div></article></li><li><article class="latest-card chamfer-2"><a class="latest-media" href="/blog/child-protection-policy-zh/" tabindex="-1" aria-hidden="true"><img src="https://img.beyhk.sh/content/images/2026/11/beyhk-32dbc9c465f7.png" alt="" loading="lazy" /></a><div class="latest-text"><p class="label"><time datetime="2026-10-31T14:37:24.000+08:00">2026-10-31</time></p><h3><a href="/blog/child-protection-policy-zh/">BeyHK 兒童保護政策</a></h3><p>BeyHK 供 13 歲及以上的玩家使用。了解我們的兒童保護政策：家長管理帳戶、行為規則、舉報方式，以及我們如何保護年輕玩家。</p></div></article></li></ul><div class="latest-controls" hidden><div class="latest-dots"><button type="button" aria-label="去第 1 篇"></button><button type="button" aria-label="去第 2 篇"></button><button type="button" aria-label="去第 3 篇"></button><button type="button" aria-label="去第 4 篇"></button><button type="button" aria-label="去第 5 篇"></button><button type="button" aria-label="去第 6 篇"></button></div><div class="latest-arrows"><button type="button" class="latest-prev" aria-label="上一篇">←</button><button type="button" class="latest-next" aria-label="下一篇">→</button></div></div></div><!-- /latest-posts -->
+        <script>
+          (function (root) {
+            var track = root.querySelector('.latest-track');
+            var controls = root.querySelector('.latest-controls');
+            if (!track || !controls) return;
+            var cards = track.children;
+            var dots = controls.querySelectorAll('.latest-dots button');
+            var prev = controls.querySelector('.latest-prev');
+            var next = controls.querySelector('.latest-next');
+            var smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+            function step() {
+              return cards.length > 1
+                ? cards[1].offsetLeft - cards[0].offsetLeft
+                : track.clientWidth;
+            }
+            function go(left) {
+              track.scrollTo({ left: left, behavior: smooth ? 'smooth' : 'auto' });
+            }
+            function update() {
+              var max = track.scrollWidth - track.clientWidth;
+              controls.hidden = max <= 1;
+              var last = Math.ceil(max / step() - 0.05);
+              var at = track.scrollLeft >= max - 1 ? last : Math.round(track.scrollLeft / step());
+              for (var i = 0; i < dots.length; i++) {
+                dots[i].hidden = i > last;
+                if (i === at) dots[i].setAttribute('aria-current', 'true');
+                else dots[i].removeAttribute('aria-current');
+              }
+              prev.disabled = track.scrollLeft <= 1;
+              next.disabled = track.scrollLeft >= max - 1;
+            }
+            Array.prototype.forEach.call(dots, function (dot, i) {
+              dot.addEventListener('click', function () {
+                go(i * step());
+              });
+            });
+            prev.addEventListener('click', function () {
+              go(track.scrollLeft - step());
+            });
+            next.addEventListener('click', function () {
+              go(track.scrollLeft + step());
+            });
+            track.addEventListener('scroll', update, { passive: true });
+            addEventListener('resize', update);
+            addEventListener('load', update);
+            update();
+          })(document.currentScript.parentNode);
+        </script>
+      </section>
       <section class="block">
         <h2>啱啱開始玩 Beyblade X？</h2>
         <p>
@@ -348,53 +403,73 @@
       <section class="block" id="faq">
         <h2>常見問題</h2>
         <div class="faq">
-          <h3>BeyHK 係咪官方 App？</h3>
-          <p>
-            唔係。BeyHK 係香港 Beyblade X 玩家嘅非官方社群 App，與 Takara Tomy 或 Hasbro
-            並無關聯。Beyblade 係其擁有者嘅商標。
-          </p>
-          <h3>BeyHK 使唔使錢？</h3>
-          <p>唔使。BeyHK 免費使用，零廣告，亦冇 App 內購買。</p>
-          <h3>排名點樣計？</h3>
-          <p>
-            BeyHK 用 Glicko-2 評分，每個玩家都有一個評分同誤差範圍（±）。每場對戰要對手掃 QR
-            或者用推送確認，評分先會變。打夠 5
-            場定位賽就會上榜，分青銅、白銀、黃金、白金四個段位，有全港同各區排行榜。
-          </p>
-          <h3>對戰要幾耐內確認？</h3>
-          <p>對手要喺 48 小時內確認。評分只會喺對手確認之後先變。</p>
-          <h3>點樣搵對手？</h3>
-          <p>
-            App
-            入面有全港總聊天室、每間店舖嘅聊天室同每個段位嘅聊天室。喺聊天室直接「挑戰」對方，對方接受後就會開始記錄對戰。
-          </p>
-          <h3>比賽結果計唔計入排名？</h3>
-          <p>
-            唔計。主辦人可以喺 App
-            內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果，但賽事結果唔會影響排名。
-          </p>
-          <h3>賽季幾時完？完咗會點？</h3>
-          <p>
-            第零季由推出一直去到 2027 年 1 月 1 日。賽季結束時，評分會向 1500
-            回調一半，每人會收到一份賽季回顧，包括名次、段位、戰績、連勝同最常用
-            Blade。之後每個季度一個賽季。
-          </p>
-          <h3>幾多歲可以用？家長可以點樣控制？</h3>
-          <p>
-            BeyHK 適合 13 歲或以上人士使用。未滿 13
-            歲嘅玩家要由家長用自己嘅電郵設立受管理帳戶，再用家長 PIN
-            決定開唔開聊天、私訊、朋友、相片同見面確認功能。
-          </p>
-          <h3>BeyHK 幾時推出？</h3>
-          <p>
-            BeyHK 而家係封閉測試階段，你可以報名加入。iOS 同 Android 版本即將喺 App Store 同 Google
-            Play 推出。
-          </p>
-          <h3>店舖同賽事主辦人可以點樣用 BeyHK？</h3>
-          <p>
-            每間店舖喺 App 入面都有自己嘅聊天室，店舖同場地亦會喺地圖上顯示。主辦人可以喺 App
-            內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果。
-          </p>
+          <details open>
+            <summary><h3>BeyHK 係咪官方 App？</h3></summary>
+            <p>
+              唔係。BeyHK 係香港 Beyblade X 玩家嘅非官方社群 App，與 Takara Tomy 或 Hasbro
+              並無關聯。Beyblade 係其擁有者嘅商標。
+            </p>
+          </details>
+          <details>
+            <summary><h3>BeyHK 使唔使錢？</h3></summary>
+            <p>唔使。BeyHK 免費使用，零廣告，亦冇 App 內購買。</p>
+          </details>
+          <details>
+            <summary><h3>排名點樣計？</h3></summary>
+            <p>
+              BeyHK 用 Glicko-2 評分，每個玩家都有一個評分同誤差範圍（±）。每場對戰要對手掃 QR
+              或者用推送確認，評分先會變。打夠 5
+              場定位賽就會上榜，分青銅、白銀、黃金、白金四個段位，有全港同各區排行榜。
+            </p>
+          </details>
+          <details>
+            <summary><h3>對戰要幾耐內確認？</h3></summary>
+            <p>對手要喺 48 小時內確認。評分只會喺對手確認之後先變。</p>
+          </details>
+          <details>
+            <summary><h3>點樣搵對手？</h3></summary>
+            <p>
+              App
+              入面有全港總聊天室、每間店舖嘅聊天室同每個段位嘅聊天室。喺聊天室直接「挑戰」對方，對方接受後就會開始記錄對戰。
+            </p>
+          </details>
+          <details>
+            <summary><h3>比賽結果計唔計入排名？</h3></summary>
+            <p>
+              唔計。主辦人可以喺 App
+              內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果，但賽事結果唔會影響排名。
+            </p>
+          </details>
+          <details>
+            <summary><h3>賽季幾時完？完咗會點？</h3></summary>
+            <p>
+              第零季由推出一直去到 2027 年 1 月 1 日。賽季結束時，評分會向 1500
+              回調一半，每人會收到一份賽季回顧，包括名次、段位、戰績、連勝同最常用
+              Blade。之後每個季度一個賽季。
+            </p>
+          </details>
+          <details>
+            <summary><h3>幾多歲可以用？家長可以點樣控制？</h3></summary>
+            <p>
+              BeyHK 適合 13 歲或以上人士使用。未滿 13
+              歲嘅玩家要由家長用自己嘅電郵設立受管理帳戶，再用家長 PIN
+              決定開唔開聊天、私訊、朋友、相片同見面確認功能。
+            </p>
+          </details>
+          <details>
+            <summary><h3>BeyHK 幾時推出？</h3></summary>
+            <p>
+              BeyHK 而家係封閉測試階段，你可以報名加入。iOS 同 Android 版本即將喺 App Store 同
+              Google Play 推出。
+            </p>
+          </details>
+          <details>
+            <summary><h3>店舖同賽事主辦人可以點樣用 BeyHK？</h3></summary>
+            <p>
+              每間店舖喺 App 入面都有自己嘅聊天室，店舖同場地亦會喺地圖上顯示。主辦人可以喺 App
+              內舉辦單淘汰賽或者瑞士輪，由裁判即場輸入結果。
+            </p>
+          </details>
         </div>
       </section>
       <section class="block" id="glossary">
@@ -419,11 +494,6 @@
           <dt>賽季回調</dt>
           <dd>賽季完結時，評分向 1500 回調一半。</dd>
         </dl>
-      </section>
-      <section class="block" id="latest">
-        <h2>最新網誌</h2>
-        <!-- latest-posts --><div class="grid cols-3"><article class="card chamfer-2"><p class="label"><time datetime="2026-11-17T11:18:00.000+08:00">2026-11-17</time></p><h3><a href="/blog/beyblade-five-four/">模型完整資料：規格・零件・設計重點</a></h3><p>由 BX、UX、CX 編碼規則到 Starter、Booster、Random Booster 嘅入手策略，一篇睇清 Beyblade X 模型點樣揀。</p><p><a class="read-more" href="/blog/beyblade-five-four/">閱讀全文 →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-16T21:59:46.000+08:00">2026-11-16</time></p><h3><a href="/blog/beyblade-x-beginner-guide/">Beyblade X 新手指南：香港玩家點樣開始</a></h3><p>香港 Beyblade X 新手由零開始：要買啲咩、去邊度搵人打、第一場點樣記錄同確認，打夠 5 場定位賽就上榜。</p><p><a class="read-more" href="/blog/beyblade-x-beginner-guide/">閱讀全文 →</a></p></article><article class="card chamfer-2"><p class="label"><time datetime="2026-11-13T16:58:33.000+08:00">2026-11-13</time></p><h3><a href="/blog/bx-forty-eight/">BX-48 一覽：規格、部件同重點</a></h3><p>Random Booster Vol. 9 復刻五把日本限定金屬塗層刃，配全新固鎖軸心組合：BX-48 嘅規格、實測刃重同香港入手建議全部喺呢篇。</p><p><a class="read-more" href="/blog/bx-forty-eight/">閱讀全文 →</a></p></article></div><!-- /latest-posts -->
-        <p><a href="/blog/">睇全部網誌 →</a></p>
       </section>
     </main>
     <footer class="site-footer">
