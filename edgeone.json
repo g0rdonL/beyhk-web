@@ -51,6 +51,11 @@
       "statusCode": 301
     },
     {
+      "source": "/llm-info",
+      "destination": "/llm-info/",
+      "statusCode": 301
+    },
+    {
       "source": "/blog",
       "destination": "/blog/",
       "statusCode": 301
@@ -98,6 +103,11 @@
     {
       "source": "/en/beta",
       "destination": "/en/beta/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/llm-info",
+      "destination": "/en/llm-info/",
       "statusCode": 301
     },
     {
