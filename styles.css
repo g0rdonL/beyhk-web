@@ -376,22 +376,23 @@ strong {
 .ask-ai svg {
   display: block;
 }
-/* Six assistants: smaller buttons on phones so the label + row stay on one line
-   (same approach as aight.to), instead of wrapping to a ragged second line. */
+/* Six assistants: on phones the buttons grow to share the full row width — one line,
+   no dead space on the right, tap targets stay large. */
 @media (max-width: 639px) {
   .ask-ai {
-    gap: 4px;
+    gap: 6px;
   }
   .ask-ai span {
     margin-right: 2px;
   }
   .ask-ai a {
-    width: 32px;
-    height: 32px;
+    flex: 1 1 0;
+    width: auto;
+    height: 40px;
   }
   .ask-ai svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 }
 /* On a phone a row that wraps leaves two buttons of different widths stacked. Stacking them
