@@ -376,11 +376,22 @@ strong {
 .ask-ai svg {
   display: block;
 }
-/* Six 44px buttons plus the label outgrow a narrow phone. The buttons are fixed squares,
-   so a wrapped row stays even, unlike the cta-row buttons below. */
+/* Six assistants: smaller buttons on phones so the label + row stay on one line
+   (same approach as aight.to), instead of wrapping to a ragged second line. */
 @media (max-width: 639px) {
   .ask-ai {
-    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .ask-ai span {
+    margin-right: 2px;
+  }
+  .ask-ai a {
+    width: 32px;
+    height: 32px;
+  }
+  .ask-ai svg {
+    width: 16px;
+    height: 16px;
   }
 }
 /* On a phone a row that wraps leaves two buttons of different widths stacked. Stacking them
