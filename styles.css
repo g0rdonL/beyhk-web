@@ -376,6 +376,13 @@ strong {
 .ask-ai svg {
   display: block;
 }
+/* Six 44px buttons plus the label outgrow a narrow phone. The buttons are fixed squares,
+   so a wrapped row stays even, unlike the cta-row buttons below. */
+@media (max-width: 639px) {
+  .ask-ai {
+    flex-wrap: wrap;
+  }
+}
 /* On a phone a row that wraps leaves two buttons of different widths stacked. Stacking them
    in one column as wide as the wider button keeps them even without stretching the lime
    button across the screen (lime is never a large fill). */
