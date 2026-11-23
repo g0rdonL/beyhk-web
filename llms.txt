@@ -18,7 +18,7 @@ A curated index of beyhk.sh's public pages for AI assistants. The site is in Tra
 - [News](https://beyhk.sh/en/news/): The in-app news feed: curated Beyblade X news, Hong Kong shop and event announcements, published by admins with sources credited. Latest updates on @beyhkfun.
 - [Parents & safety](https://beyhk.sh/en/parents/): Managed accounts, the guardian PIN, chat safety, location and privacy in BeyHK: under-13s play through a parent-made account, and the parent decides whether chat, DMs, friends, photos and the meet-up check are on.
 - [About](https://beyhk.sh/en/about/): BeyHK (螺Fun) is the unofficial community app for Beyblade X players in Hong Kong: a real, opponent-confirmed H2H ranking for the city. No intrusive ads. Not affiliated with Takara Tomy or Hasbro.
-- [Download](https://beyhk.sh/en/join/): 螺Fun - BeyHK comes to the App Store and Google Play soon. Follow @beyhkfun to hear first.
+- [Download](https://beyhk.sh/en/join/): 螺Fun - BeyHK is out now on the App Store, free to download. Android is coming soon: follow @beyhkfun to hear first.
 - [Closed beta](https://beyhk.sh/en/beta/): Sign up for the 螺Fun - BeyHK closed beta: try it on iOS or Android before the public launch.
 - [Blog](https://beyhk.sh/en/blog/): Longer pieces and event recaps.
 
@@ -33,7 +33,7 @@ A curated index of beyhk.sh's public pages for AI assistants. The site is in Tra
 - [新聞](https://beyhk.sh/news/): App 內嘅新聞：精選 Beyblade X 新聞、香港店舖同賽事公布，由管理員發布並註明來源。最新消息喺 @beyhkfun。
 - [家長同安全](https://beyhk.sh/parents/): BeyHK 嘅受管理帳戶、家長 PIN、聊天安全、位置同私隱：未滿 13 歲由家長設立帳戶，決定開唔開聊天、私訊、朋友、相片同見面確認。
 - [關於](https://beyhk.sh/about/): BeyHK（螺Fun）係香港 Beyblade X 玩家嘅非官方社群 App：一個真實、經對手確認嘅香港 H2H 排名。承諾唔會有侵入式廣告。與 Takara Tomy 或 Hasbro 並無關聯。
-- [下載](https://beyhk.sh/join/): 螺Fun - BeyHK 即將喺 App Store 同 Google Play 推出。先追蹤 @beyhkfun，推出時第一時間知。
+- [下載](https://beyhk.sh/join/): 螺Fun - BeyHK 已經喺 App Store 推出，免費下載。Android 版本即將推出，先追蹤 @beyhkfun，推出時第一時間知。
 - [封閉測試](https://beyhk.sh/beta/): 登記加入螺Fun - BeyHK 嘅封閉測試：公開推出之前，喺 iOS 或 Android 搶先試。
 - [網誌](https://beyhk.sh/blog/): 較長嘅文章同賽事回顧。
 
