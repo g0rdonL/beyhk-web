@@ -2303,3 +2303,174 @@ nav.pages a {
   height: 100%;
   border: 0;
 }
+
+/* Picture guides (/learn/, scripts/site/guides.ts): big drawings, very few words. The drawings
+   take every colour from the tokens, so they follow the theme; sky marks the thing to look at
+   and coral only the 48 hour expiry. */
+.pg-syms {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.pg-cards {
+  display: grid;
+  gap: 32px;
+  margin: 8px 0 24px;
+}
+@media (min-width: 720px) {
+  .pg-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 28px;
+  }
+}
+.pg-card {
+  min-width: 0;
+}
+.pg-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.pg-card .pg-n {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-3);
+  margin: 14px 0 2px;
+}
+.pg-card h3 {
+  margin: 0 0 6px;
+}
+.pg-card p:last-child {
+  margin: 0;
+  color: var(--text-2);
+  max-width: 26em;
+}
+.pg-card svg text {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 15px;
+  fill: var(--text-1);
+}
+.pg-card svg text.pg-num {
+  font-family: var(--font-display);
+}
+.pg-card svg text.pg-t2 {
+  fill: var(--text-2);
+}
+.pg-card svg text.pg-tsky {
+  fill: var(--sky);
+}
+.pg-card svg text.pg-ton {
+  fill: var(--on-sky);
+}
+.pg-card svg text.pg-tc {
+  fill: var(--coral);
+}
+.pg-ln,
+.pg-lns,
+.pg-lnc {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pg-ln {
+  stroke: var(--text-2);
+}
+.pg-lns {
+  stroke: var(--sky);
+}
+.pg-lnc {
+  stroke: var(--coral);
+}
+.pg-dash {
+  stroke-dasharray: 6 6;
+}
+.pg-fsky {
+  fill: var(--sky);
+}
+.pg-ffg {
+  fill: var(--text-1);
+}
+.pg-ff2 {
+  fill: var(--text-2);
+}
+.pg-fsu {
+  fill: var(--elevated);
+}
+.pg-box,
+.pg-boxs {
+  fill: var(--elevated);
+  stroke-width: 3;
+}
+.pg-box {
+  stroke: var(--text-2);
+}
+.pg-boxs {
+  stroke: var(--sky);
+}
+.pg-words {
+  margin: 0;
+  max-width: 44em;
+  border-top: 1px solid var(--border);
+}
+.pg-words > div {
+  display: grid;
+  grid-template-columns: minmax(6.5em, 11em) 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pg-words dt {
+  font-weight: 700;
+}
+.pg-words dd {
+  margin: 0;
+  min-width: 0;
+  color: var(--text-2);
+}
+.pg-stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+.pg-stops li {
+  display: flex;
+  align-items: center;
+}
+.pg-stops li + li::before {
+  content: '';
+  flex: none;
+  width: 22px;
+  height: 2px;
+  background: var(--text-3);
+}
+.pg-stop {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.pg-stop b {
+  font-weight: 700;
+}
+.pg-stop small {
+  font-size: 13px;
+  color: var(--text-2);
+}
+.pg-next {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.25;
+  max-width: 24em;
+  margin: 0 0 24px;
+}

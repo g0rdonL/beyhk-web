@@ -56,6 +56,16 @@
       "statusCode": 301
     },
     {
+      "source": "/learn/first-battle",
+      "destination": "/learn/first-battle/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learn/ranking",
+      "destination": "/learn/ranking/",
+      "statusCode": 301
+    },
+    {
       "source": "/blog",
       "destination": "/blog/",
       "statusCode": 301
@@ -108,6 +118,16 @@
     {
       "source": "/en/llm-info",
       "destination": "/en/llm-info/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/learn/first-battle",
+      "destination": "/en/learn/first-battle/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/learn/ranking",
+      "destination": "/en/learn/ranking/",
       "statusCode": 301
     },
     {

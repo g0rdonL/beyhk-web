@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>第一場對戰圖解 · BeyHK</title>
+    <meta
+      name="description"
+      content="圖解 BeyHK 即場對戰：兩個人企埋一齊，一部電話掃另一部嘅 QR，就開到一場唔計分嘅對戰。" />
+    <link rel="canonical" href="https://beyhk.sh/learn/first-battle/" />
+    <link rel="alternate" hreflang="zh-HK" href="https://beyhk.sh/learn/first-battle/" />
+    <link rel="alternate" hreflang="en" href="https://beyhk.sh/en/learn/first-battle/" />
+    <link rel="alternate" hreflang="x-default" href="https://beyhk.sh/learn/first-battle/" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/consent.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BeyHK" />
+    <meta property="og:title" content="第一場對戰圖解 · BeyHK" />
+    <meta
+      property="og:description"
+      content="圖解 BeyHK 即場對戰：兩個人企埋一齊，一部電話掃另一部嘅 QR，就開到一場唔計分嘅對戰。" />
+    <meta property="og:url" content="https://beyhk.sh/learn/first-battle/" />
+    <meta property="og:image" content="https://beyhk.sh/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="zh_HK" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0A1218" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#E4EEF4" media="(prefers-color-scheme: light)" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="skip" href="#content">跳到內容</a>
+      <div class="bar">
+        <a class="brand" href="/"
+          ><span class="mark" style="--mark-size: 36px" aria-hidden="true"
+            ><img src="/img/beyhk-mark.svg" alt="BeyHK" width="36" height="36" /></span
+          ><span class="wordmark">BeyHK</span></a
+        >
+        <a
+          class="lang-switch"
+          href="/en/learn/first-battle/"
+          lang="en"
+          hreflang="en"
+          title="English"
+          >EN</a
+        >
+      </div>
+      <nav class="site-nav" aria-label="網站導覽">
+        <a href="/">主頁</a><a href="/ranking/">排名</a><a href="/how-it-works/">點樣玩</a
+        ><a href="/events/">賽事</a><a href="/community/">社群</a><a href="/news/">新聞</a
+        ><a href="/blog/">網誌</a><a href="/parents/">家長同安全</a><a href="/about/">關於</a
+        ><a href="/join/">下載</a>
+      </nav>
+      <script>
+        (function (nav) {
+          var here = nav.querySelector('[aria-current]');
+          if (here) {
+            var n = nav.getBoundingClientRect();
+            var h = here.getBoundingClientRect();
+            if (h.right > n.right || h.left < n.left) {
+              nav.scrollLeft += h.left - n.left - (n.width - h.width) / 2;
+            }
+          }
+          function edges() {
+            var max = nav.scrollWidth - nav.clientWidth;
+            nav.classList.toggle('more-start', nav.scrollLeft > 1);
+            nav.classList.toggle('more-end', nav.scrollLeft < max - 1);
+          }
+          edges();
+          nav.addEventListener('scroll', edges, { passive: true });
+          addEventListener('resize', edges);
+          addEventListener('load', edges);
+        })(document.currentScript.previousElementSibling);
+      </script>
+    </header>
+    <main id="content" class="site-main">
+      <svg class="pg-syms" aria-hidden="true">
+        <symbol id="pg-phone" viewBox="0 0 60 110">
+          <rect class="pg-box" x="2" y="2" width="56" height="106" rx="10" />
+          <rect class="pg-ff2" x="24" y="8" width="12" height="3" rx="1.5" />
+        </symbol>
+        <symbol id="pg-qr" viewBox="0 0 40 40">
+          <rect class="pg-ffg" x="0" y="0" width="12" height="12" />
+          <rect class="pg-fsu" x="3" y="3" width="6" height="6" />
+          <rect class="pg-ffg" x="28" y="0" width="12" height="12" />
+          <rect class="pg-fsu" x="31" y="3" width="6" height="6" />
+          <rect class="pg-ffg" x="0" y="28" width="12" height="12" />
+          <rect class="pg-fsu" x="3" y="31" width="6" height="6" />
+          <rect class="pg-ffg" x="16" y="2" width="6" height="6" />
+          <rect class="pg-ffg" x="16" y="14" width="6" height="6" />
+          <rect class="pg-ffg" x="2" y="16" width="6" height="6" />
+          <rect class="pg-ffg" x="26" y="16" width="6" height="6" />
+          <rect class="pg-ffg" x="34" y="24" width="6" height="6" />
+          <rect class="pg-ffg" x="18" y="26" width="6" height="6" />
+          <rect class="pg-ffg" x="28" y="32" width="6" height="6" />
+          <rect class="pg-ffg" x="18" y="36" width="4" height="4" />
+        </symbol>
+        <symbol id="pg-bey" viewBox="0 0 40 40">
+          <circle class="pg-fsu" cx="20" cy="20" r="18" />
+          <circle class="pg-lns" cx="20" cy="20" r="17" />
+          <circle class="pg-ln" cx="20" cy="20" r="9" />
+          <circle class="pg-fsky" cx="20" cy="20" r="3.5" />
+        </symbol>
+        <symbol id="pg-beyd" viewBox="0 0 40 40">
+          <circle class="pg-fsu" cx="20" cy="20" r="18" />
+          <circle class="pg-ln" cx="20" cy="20" r="17" />
+          <circle class="pg-ln" cx="20" cy="20" r="9" />
+          <circle class="pg-ff2" cx="20" cy="20" r="3.5" />
+        </symbol>
+        <symbol id="pg-pa" viewBox="0 0 40 50">
+          <circle class="pg-fsky" cx="20" cy="12" r="9" />
+          <path class="pg-fsky" d="M4 50Q4 27 20 27Q36 27 36 50Z" />
+        </symbol>
+        <symbol id="pg-pb" viewBox="0 0 40 50">
+          <circle class="pg-ln" cx="20" cy="12" r="8" />
+          <path class="pg-ln" d="M5 49Q5 28 20 28Q35 28 35 49Z" />
+        </symbol>
+        <symbol id="pg-tick" viewBox="0 0 40 40">
+          <circle class="pg-fsky" cx="20" cy="20" r="18" />
+          <path
+            d="M11 21l6 6 12-13"
+            fill="none"
+            stroke="var(--on-sky)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </symbol>
+      </svg>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">圖解 · 1 分鐘睇完</p>
+          <h1>掃一掃，即刻開波</h1>
+          <p class="lede">兩個人企埋一齊，一部電話掃另一部，就開到一場唔計分嘅對戰。</p>
+          <div class="cta-row">
+            <a
+              class="btn btn-primary chamfer-1"
+              href="https://apps.apple.com/hk/app/%E8%9E%BAfun-beyhk-%E9%A6%99%E6%B8%AF%E5%B0%8D%E6%88%B0%E6%8E%92%E5%90%8D/id6816851078"
+              >下載 App</a
+            ><a class="btn btn-secondary chamfer-1" href="https://www.instagram.com/beyhkfun"
+              >Instagram @beyhkfun</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <h2>睇圖</h2>
+        <div class="pg-cards">
+          <article class="pg-card">
+            <svg viewBox="0 0 320 200" role="img" aria-label="Two players, each holding a phone">
+              <use href="#pg-pa" x="52" y="42" width="68" height="85" />
+              <use href="#pg-phone" x="124" y="72" width="30" height="55" />
+              <use href="#pg-phone" x="166" y="72" width="30" height="55" />
+              <use href="#pg-pb" x="200" y="42" width="68" height="85" />
+              <text class="pg-num" x="86" y="160" text-anchor="middle">A</text>
+              <text class="pg-num" x="234" y="160" text-anchor="middle">B</text>
+            </svg>
+            <p class="pg-n">1</p>
+            <h3>兩個人，兩部電話</h3>
+            <p>企埋一齊就得。唔使打名，唔使等通知，亦唔使撳接受。</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="A phone with two buttons, the top one marked Casual">
+              <use href="#pg-phone" x="110" y="8" width="100" height="184" />
+              <rect class="pg-fsky" x="126" y="92" width="68" height="30" rx="9" />
+              <text class="pg-ton pg-num" x="160" y="112" text-anchor="middle" font-size="14">
+                Casual
+              </text>
+              <rect class="pg-ln" x="126" y="132" width="68" height="30" rx="9" />
+              <text class="pg-t2 pg-num" x="160" y="152" text-anchor="middle" font-size="14">
+                Ranked
+              </text>
+              <path class="pg-lns" d="M238 107h-30m10-8l-10 8 10 8" />
+            </svg>
+            <p class="pg-n">2</p>
+            <h3>排名頁撳 Casual</h3>
+            <p>兩個人都撳「Casual · 掃描即一般對戰」。電話會開掃描器。</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Player A's phone showing a QR code and a two minute countdown">
+              <use href="#pg-pa" x="40" y="60" width="60" height="75" />
+              <text class="pg-num" x="70" y="160" text-anchor="middle">A</text>
+              <use href="#pg-phone" x="140" y="8" width="100" height="184" />
+              <use href="#pg-qr" x="158" y="46" width="64" height="64" />
+              <text class="pg-num pg-tsky" x="190" y="146" text-anchor="middle" font-size="22">
+                2:00
+              </text>
+            </svg>
+            <p class="pg-n">3</p>
+            <h3>A 出示我的 QR</h3>
+            <p>A 撳相機下面嘅「出示我的 QR」。呢個碼得 2 分鐘，開住嘅時候會自己換新。</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Player B's phone scanning the QR code on player A's phone">
+              <use href="#pg-phone" x="36" y="28" width="80" height="147" />
+              <path class="pg-lns" d="M54 70v-12h12M98 70v-12h-12M54 122v12h12M98 122v12h-12" />
+              <text class="pg-num" x="76" y="194" text-anchor="middle">B</text>
+              <path class="pg-lns" d="M128 100h56m-12-9l12 9-12 9" />
+              <use href="#pg-phone" x="204" y="28" width="80" height="147" />
+              <use href="#pg-qr" x="220" y="72" width="48" height="48" />
+              <text class="pg-num" x="244" y="194" text-anchor="middle">A</text>
+            </svg>
+            <p class="pg-n">4</p>
+            <h3>B 掃一掃</h3>
+            <p>B 用掃描器對住 A 個碼。掃到就當接受，兩部電話一齊入場。</p>
+          </article>
+          <article class="pg-card">
+            <svg viewBox="0 0 320 200" role="img" aria-label="Three beys on each side">
+              <use href="#pg-bey" x="10" y="78" width="42" height="42" />
+              <use href="#pg-bey" x="56" y="78" width="42" height="42" />
+              <use href="#pg-bey" x="102" y="78" width="42" height="42" />
+              <text class="pg-num pg-t2" x="160" y="105" text-anchor="middle">VS</text>
+              <use href="#pg-beyd" x="176" y="78" width="42" height="42" />
+              <use href="#pg-beyd" x="222" y="78" width="42" height="42" />
+              <use href="#pg-beyd" x="268" y="78" width="42" height="42" />
+              <text class="pg-num" x="77" y="150" text-anchor="middle">A</text>
+              <text class="pg-num" x="243" y="150" text-anchor="middle">B</text>
+            </svg>
+            <p class="pg-n">5</p>
+            <h3>各出 3 隻 Bey</h3>
+            <p>雙方各自交 3 隻 Bey 嘅陣容。兩邊同時公開，再互相檢查。</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Two phones showing the same score, one marked as the scorer">
+              <use href="#pg-phone" x="50" y="26" width="84" height="154" />
+              <text class="pg-num" x="92" y="98" text-anchor="middle" font-size="26">2 : 1</text>
+              <rect class="pg-fsky" x="68" y="118" width="48" height="26" rx="8" />
+              <text class="pg-ton pg-num" x="92" y="137" text-anchor="middle" font-size="18">
+                +1
+              </text>
+              <use href="#pg-phone" x="186" y="26" width="84" height="154" />
+              <text class="pg-num pg-t2" x="228" y="98" text-anchor="middle" font-size="26">
+                2 : 1
+              </text>
+            </svg>
+            <p class="pg-n">6</p>
+            <h3>一個人負責計分</h3>
+            <p>系統揀一個計分員。淨係計分員可以寫分，另一部電話跟住睇。</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="A flat rating line and a saved match record">
+              <path class="pg-ln" d="M36 66h248" />
+              <circle class="pg-fsky" cx="160" cy="66" r="8" />
+              <rect class="pg-box" x="56" y="106" width="208" height="56" rx="14" />
+              <use href="#pg-pa" x="70" y="116" width="28" height="35" />
+              <text class="pg-num" x="160" y="141" text-anchor="middle" font-size="20">4 : 2</text>
+              <use href="#pg-pb" x="222" y="116" width="28" height="35" />
+            </svg>
+            <p class="pg-n">7</p>
+            <h3>唔計分，放心玩</h3>
+            <p>即場對戰唔會影響評分。打完自動變成對戰記錄，兩個都想再打可以即刻 rematch。</p>
+          </article>
+        </div>
+      </section>
+      <section class="block">
+        <h2>幾個字</h2>
+        <dl class="pg-words">
+          <div>
+            <dt>Casual 一般對戰</dt>
+            <dd>唔計分嘅對戰，唔會影響評分。</dd>
+          </div>
+          <div>
+            <dt>我的 QR</dt>
+            <dd>得 2 分鐘嘅對戰碼，唔係你個人檔案嗰個 QR。</dd>
+          </div>
+          <div>
+            <dt>陣容</dt>
+            <dd>你今場帶落場嘅 3 隻 Bey。</dd>
+          </div>
+          <div>
+            <dt>計分員</dt>
+            <dd>系統揀出嚟、唯一可以寫分嘅人。</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="block">
+        <h2>成個流程</h2>
+        <ol class="pg-stops">
+          <li>
+            <span class="pg-stop"><b>Casual</b><small>兩個人都撳</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>出示我的 QR</b><small>A · 2 分鐘內</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>掃碼</b><small>B</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>排陣</b><small>各 3 隻 Bey</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>計分</b><small>計分員寫</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>對戰記錄</b><small>自動</small></span>
+          </li>
+        </ol>
+      </section>
+      <section class="block">
+        <h2>考下自己</h2>
+        <div class="faq">
+          <details>
+            <summary><h3>邊個出示 QR，邊個掃？</h3></summary>
+            <p>一個人撳「出示我的 QR」，另一個人掃。掃到就當接受，唔使再撳確認。</p>
+          </details>
+          <details>
+            <summary><h3>輸咗會唔會跌評分？</h3></summary>
+            <p>唔會。即場對戰唔計分，唔會影響評分。</p>
+          </details>
+          <details>
+            <summary><h3>打到一半斷線會點？</h3></summary>
+            <p>即場對戰係即時嘅，雙方部機要保持上線。斷線 5 分鐘會提早結束場次。</p>
+          </details>
+        </div>
+      </section>
+      <section class="block">
+        <h2>下一步</h2>
+        <p class="pg-next">搵個朋友企埋一齊，開排名頁，撳 Casual。</p>
+        <div class="grid cols-2">
+          <div class="card chamfer-2">
+            <p class="label">圖解</p>
+            <h3><a href="/learn/ranking/">排名點樣計</a></h3>
+            <p>一場計分對戰要雙方都確認，先會改變評分及排名。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <nav class="foot-links" aria-label="探索">
+        <a href="/ranking/">香港 Beyblade X 排名</a>
+        <a href="/events/">香港 Beyblade X 賽事</a>
+        <a href="/how-it-works/">點樣玩 BeyHK</a>
+        <a href="/blog/beyblade-x-beginner-guide/">新手指南</a>
+        <a href="/parents/">家長同安全</a>
+        <a href="/llm-info/">俾 AI 助手</a>
+      </nav>
+      <div class="cols">
+        <div>
+          <p class="foot-brand">
+            <span class="mark" style="--mark-size: 28px" aria-hidden="true"
+              ><img src="/img/beyhk-mark.svg" alt="BeyHK" width="28" height="28" /></span
+            ><span class="wordmark">BeyHK</span>
+          </p>
+          <p>香港 Beyblade X 玩家嘅非官方社群 App</p>
+        </div>
+        <nav aria-label="私隱政策">
+          <a href="/privacy.html">私隱政策</a>
+          <a href="/terms.html">使用條款</a>
+          <a href="/data-deletion.html">刪除資料</a>
+          <button type="button" class="cookie-settings" data-consent-open hidden>
+            Cookie 設定
+          </button>
+        </nav>
+        <nav aria-label="追蹤">
+          <a href="https://www.instagram.com/beyhkfun" rel="me noopener">Instagram @beyhkfun</a>
+          <a href="https://www.threads.com/@beyhkfun" rel="me noopener">Threads @beyhkfun</a>
+          <a href="https://www.facebook.com/profile.php?id=61595220414128" rel="me noopener"
+            >Facebook</a
+          >
+          <a href="https://chat.whatsapp.com/GS6Yz5AJGaOHzvh4RnxtAM" rel="noopener"
+            >WhatsApp 社群</a
+          >
+        </nav>
+      </div>
+      <p class="disclaimer">
+        BeyHK 與 Takara Tomy 或 Hasbro 並無關聯。Beyblade 係其擁有者嘅商標。本 App 適合 13
+        歲或以上人士使用；未滿 13 歲須由家長設立受管理帳戶。
+      </p>
+      <p class="copyright">© 2026 BeyHK</p>
+    </footer>
+  </body>
+</html>

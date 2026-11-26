@@ -20,6 +20,8 @@ A curated index of beyhk.sh's public pages for AI assistants. The site is in Tra
 - [About](https://beyhk.sh/en/about/): BeyHK (螺Fun) is the unofficial community app for Beyblade X players in Hong Kong: a real, opponent-confirmed H2H ranking for the city. No intrusive ads. Not affiliated with Takara Tomy or Hasbro.
 - [Download](https://beyhk.sh/en/join/): 螺Fun - BeyHK is out now on the App Store, free to download. Android is coming soon: follow @beyhkfun to hear first.
 - [Closed beta](https://beyhk.sh/en/beta/): Sign up for the 螺Fun - BeyHK closed beta: try it on iOS or Android before the public launch.
+- [Your first battle in pictures](https://beyhk.sh/en/learn/first-battle/): BeyHK casual battles in pictures: two players stand together, one phone scans the other’s QR, and an unrated battle starts.
+- [How the ranking works in pictures](https://beyhk.sh/en/learn/ranking/): The BeyHK ranking in pictures: log a match, your opponent confirms within 48 hours, your rating moves, and 5 confirmed matches put you on the ladder. Tiers and seasons too.
 - [Blog](https://beyhk.sh/en/blog/): Longer pieces and event recaps.
 
 ## 繁體中文（香港）
@@ -35,6 +37,8 @@ A curated index of beyhk.sh's public pages for AI assistants. The site is in Tra
 - [關於](https://beyhk.sh/about/): BeyHK（螺Fun）係香港 Beyblade X 玩家嘅非官方社群 App：一個真實、經對手確認嘅香港 H2H 排名。承諾唔會有侵入式廣告。與 Takara Tomy 或 Hasbro 並無關聯。
 - [下載](https://beyhk.sh/join/): 螺Fun - BeyHK 已經喺 App Store 推出，免費下載。Android 版本即將推出，先追蹤 @beyhkfun，推出時第一時間知。
 - [封閉測試](https://beyhk.sh/beta/): 登記加入螺Fun - BeyHK 嘅封閉測試：公開推出之前，喺 iOS 或 Android 搶先試。
+- [第一場對戰圖解](https://beyhk.sh/learn/first-battle/): 圖解 BeyHK 即場對戰：兩個人企埋一齊，一部電話掃另一部嘅 QR，就開到一場唔計分嘅對戰。
+- [排名點樣計圖解](https://beyhk.sh/learn/ranking/): 圖解 BeyHK 排名：記錄對戰、對手 48 小時內確認、評分改變、5 場已確認對戰上榜，仲有段位同賽季。
 - [網誌](https://beyhk.sh/blog/): 較長嘅文章同賽事回顧。
 
 ## Legal

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How the ranking works in pictures · BeyHK</title>
+    <meta
+      name="description"
+      content="The BeyHK ranking in pictures: log a match, your opponent confirms within 48 hours, your rating moves, and 5 confirmed matches put you on the ladder. Tiers and seasons too." />
+    <link rel="canonical" href="https://beyhk.sh/en/learn/ranking/" />
+    <link rel="alternate" hreflang="zh-HK" href="https://beyhk.sh/learn/ranking/" />
+    <link rel="alternate" hreflang="en" href="https://beyhk.sh/en/learn/ranking/" />
+    <link rel="alternate" hreflang="x-default" href="https://beyhk.sh/learn/ranking/" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/consent.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BeyHK" />
+    <meta property="og:title" content="How the ranking works in pictures · BeyHK" />
+    <meta
+      property="og:description"
+      content="The BeyHK ranking in pictures: log a match, your opponent confirms within 48 hours, your rating moves, and 5 confirmed matches put you on the ladder. Tiers and seasons too." />
+    <meta property="og:url" content="https://beyhk.sh/en/learn/ranking/" />
+    <meta property="og:image" content="https://beyhk.sh/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="zh_HK" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0A1218" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#E4EEF4" media="(prefers-color-scheme: light)" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="skip" href="#content">Skip to content</a>
+      <div class="bar">
+        <a class="brand" href="/en/"
+          ><span class="mark" style="--mark-size: 36px" aria-hidden="true"
+            ><img src="/img/beyhk-mark.svg" alt="BeyHK" width="36" height="36" /></span
+          ><span class="wordmark">BeyHK</span></a
+        >
+        <a class="lang-switch" href="/learn/ranking/" lang="zh-HK" hreflang="zh-HK" title="繁體中文"
+          >繁</a
+        >
+      </div>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="/en/">Home</a><a href="/en/ranking/">Ranking</a
+        ><a href="/en/how-it-works/">How it works</a><a href="/en/events/">Events</a
+        ><a href="/en/community/">Community</a><a href="/en/news/">News</a
+        ><a href="/en/blog/">Blog</a><a href="/en/parents/">Parents & safety</a
+        ><a href="/en/about/">About</a><a href="/en/join/">Download</a>
+      </nav>
+      <script>
+        (function (nav) {
+          var here = nav.querySelector('[aria-current]');
+          if (here) {
+            var n = nav.getBoundingClientRect();
+            var h = here.getBoundingClientRect();
+            if (h.right > n.right || h.left < n.left) {
+              nav.scrollLeft += h.left - n.left - (n.width - h.width) / 2;
+            }
+          }
+          function edges() {
+            var max = nav.scrollWidth - nav.clientWidth;
+            nav.classList.toggle('more-start', nav.scrollLeft > 1);
+            nav.classList.toggle('more-end', nav.scrollLeft < max - 1);
+          }
+          edges();
+          nav.addEventListener('scroll', edges, { passive: true });
+          addEventListener('resize', edges);
+          addEventListener('load', edges);
+        })(document.currentScript.previousElementSibling);
+      </script>
+    </header>
+    <main id="content" class="site-main">
+      <svg class="pg-syms" aria-hidden="true">
+        <symbol id="pg-phone" viewBox="0 0 60 110">
+          <rect class="pg-box" x="2" y="2" width="56" height="106" rx="10" />
+          <rect class="pg-ff2" x="24" y="8" width="12" height="3" rx="1.5" />
+        </symbol>
+        <symbol id="pg-qr" viewBox="0 0 40 40">
+          <rect class="pg-ffg" x="0" y="0" width="12" height="12" />
+          <rect class="pg-fsu" x="3" y="3" width="6" height="6" />
+          <rect class="pg-ffg" x="28" y="0" width="12" height="12" />
+          <rect class="pg-fsu" x="31" y="3" width="6" height="6" />
+          <rect class="pg-ffg" x="0" y="28" width="12" height="12" />
+          <rect class="pg-fsu" x="3" y="31" width="6" height="6" />
+          <rect class="pg-ffg" x="16" y="2" width="6" height="6" />
+          <rect class="pg-ffg" x="16" y="14" width="6" height="6" />
+          <rect class="pg-ffg" x="2" y="16" width="6" height="6" />
+          <rect class="pg-ffg" x="26" y="16" width="6" height="6" />
+          <rect class="pg-ffg" x="34" y="24" width="6" height="6" />
+          <rect class="pg-ffg" x="18" y="26" width="6" height="6" />
+          <rect class="pg-ffg" x="28" y="32" width="6" height="6" />
+          <rect class="pg-ffg" x="18" y="36" width="4" height="4" />
+        </symbol>
+        <symbol id="pg-bey" viewBox="0 0 40 40">
+          <circle class="pg-fsu" cx="20" cy="20" r="18" />
+          <circle class="pg-lns" cx="20" cy="20" r="17" />
+          <circle class="pg-ln" cx="20" cy="20" r="9" />
+          <circle class="pg-fsky" cx="20" cy="20" r="3.5" />
+        </symbol>
+        <symbol id="pg-beyd" viewBox="0 0 40 40">
+          <circle class="pg-fsu" cx="20" cy="20" r="18" />
+          <circle class="pg-ln" cx="20" cy="20" r="17" />
+          <circle class="pg-ln" cx="20" cy="20" r="9" />
+          <circle class="pg-ff2" cx="20" cy="20" r="3.5" />
+        </symbol>
+        <symbol id="pg-pa" viewBox="0 0 40 50">
+          <circle class="pg-fsky" cx="20" cy="12" r="9" />
+          <path class="pg-fsky" d="M4 50Q4 27 20 27Q36 27 36 50Z" />
+        </symbol>
+        <symbol id="pg-pb" viewBox="0 0 40 50">
+          <circle class="pg-ln" cx="20" cy="12" r="8" />
+          <path class="pg-ln" d="M5 49Q5 28 20 28Q35 28 35 49Z" />
+        </symbol>
+        <symbol id="pg-tick" viewBox="0 0 40 40">
+          <circle class="pg-fsky" cx="20" cy="20" r="18" />
+          <path
+            d="M11 21l6 6 12-13"
+            fill="none"
+            stroke="var(--on-sky)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </symbol>
+      </svg>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">In pictures · a 1 minute read</p>
+          <h1>How the ranking works</h1>
+          <p class="lede">
+            A rated match changes your rating and rank only after both players confirm it.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn btn-primary chamfer-1"
+              href="https://apps.apple.com/hk/app/%E8%9E%BAfun-beyhk-%E9%A6%99%E6%B8%AF%E5%B0%8D%E6%88%B0%E6%8E%92%E5%90%8D/id6816851078"
+              >Get the app</a
+            ><a class="btn btn-secondary chamfer-1" href="https://www.instagram.com/beyhkfun"
+              >Instagram @beyhkfun</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <h2>The pictures</h2>
+        <div class="pg-cards">
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="A phone with three rows: opponent, decks, score">
+              <use href="#pg-phone" x="110" y="8" width="100" height="184" />
+              <rect class="pg-ln" x="124" y="40" width="72" height="32" rx="8" />
+              <text x="160" y="61" text-anchor="middle" font-size="14">Opponent</text>
+              <rect class="pg-ln" x="124" y="82" width="72" height="32" rx="8" />
+              <text x="160" y="103" text-anchor="middle" font-size="14">Decks</text>
+              <rect class="pg-lns" x="124" y="124" width="72" height="32" rx="8" />
+              <text class="pg-num" x="160" y="146" text-anchor="middle">4 : 2</text>
+            </svg>
+            <p class="pg-n">1</p>
+            <h3>After the battle, log it</h3>
+            <p>Either player can log it. Three things go in: opponent, decks, score.</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Player A sends the result to player B, who confirms it">
+              <use href="#pg-pa" x="34" y="56" width="64" height="80" />
+              <text class="pg-num" x="66" y="162" text-anchor="middle">A</text>
+              <path class="pg-ln" d="M110 100h36m-10-8l10 8-10 8" />
+              <use href="#pg-tick" x="156" y="76" width="48" height="48" />
+              <use href="#pg-pb" x="222" y="56" width="64" height="80" />
+              <text class="pg-num" x="254" y="162" text-anchor="middle">B</text>
+            </svg>
+            <p class="pg-n">2</p>
+            <h3>Your opponent confirms</h3>
+            <p>
+              Your opponent confirms, rejects or disputes it from the inbox. In person, a QR scan
+              confirms on the spot.
+            </p>
+          </article>
+          <article class="pg-card">
+            <svg viewBox="0 0 320 200" role="img" aria-label="A time bar that ends at 48 hours">
+              <path class="pg-ln" d="M40 104h240" />
+              <path class="pg-lns" d="M40 104h150" />
+              <circle class="pg-fsky" cx="40" cy="104" r="7" />
+              <path class="pg-lnc" d="M280 84v40" />
+              <text class="pg-num pg-tc" x="280" y="70" text-anchor="middle" font-size="20">
+                48h
+              </text>
+              <text class="pg-t2" x="40" y="140" text-anchor="middle" font-size="13">Logged</text>
+            </svg>
+            <p class="pg-n">3</p>
+            <h3>There are 48 hours</h3>
+            <p>Unconfirmed after 48 hours, the match expires and never counts.</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="One player's rating goes up and the other's goes down">
+              <use href="#pg-pa" x="64" y="84" width="56" height="70" />
+              <path class="pg-lns" d="M92 70V28m-12 14l12-14 12 14" />
+              <use href="#pg-pb" x="200" y="84" width="56" height="70" />
+              <path class="pg-ln" d="M228 28v42m-12-14l12 14 12-14" />
+            </svg>
+            <p class="pg-n">4</p>
+            <h3>Confirmed, then the rating moves</h3>
+            <p>Only confirmed matches move your rating. Ratings are worked out with Glicko-2.</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Five circles, three filled in, labelled 3 of 5">
+              <circle class="pg-fsky" cx="64" cy="88" r="17" />
+              <circle class="pg-fsky" cx="112" cy="88" r="17" />
+              <circle class="pg-fsky" cx="160" cy="88" r="17" />
+              <circle class="pg-ln" cx="208" cy="88" r="16" />
+              <circle class="pg-ln" cx="256" cy="88" r="16" />
+              <text class="pg-num" x="160" y="152" text-anchor="middle" font-size="22">3/5</text>
+            </svg>
+            <p class="pg-n">5</p>
+            <h3>Five matches to get on</h3>
+            <p>
+              You appear on the ladder after 5 confirmed matches. Until then you see “placement
+              3/5”.
+            </p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Four steps going up: Bronze, Silver, Gold, Platinum">
+              <rect class="pg-box" x="26" y="128" width="62" height="42" rx="6" />
+              <rect class="pg-box" x="96" y="100" width="62" height="70" rx="6" />
+              <rect class="pg-box" x="166" y="72" width="62" height="98" rx="6" />
+              <rect class="pg-boxs" x="236" y="44" width="62" height="126" rx="6" />
+              <text x="57" y="118" text-anchor="middle" font-size="13">Bronze</text>
+              <text x="127" y="90" text-anchor="middle" font-size="13">Silver</text>
+              <text x="197" y="62" text-anchor="middle" font-size="13">Gold</text>
+              <text class="pg-tsky" x="267" y="34" text-anchor="middle" font-size="13">
+                Platinum
+              </text>
+            </svg>
+            <p class="pg-n">6</p>
+            <h3>Four tiers</h3>
+            <p>Tiers run from Bronze to Silver, Gold and Platinum.</p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="Three bars for three games against the same opponent, the third one shorter">
+              <rect class="pg-fsky" x="70" y="50" width="44" height="100" rx="6" />
+              <rect class="pg-fsky" x="138" y="50" width="44" height="100" rx="6" />
+              <rect class="pg-ff2" x="206" y="104" width="44" height="46" rx="6" />
+              <text class="pg-num pg-t2" x="92" y="176" text-anchor="middle">1</text>
+              <text class="pg-num pg-t2" x="160" y="176" text-anchor="middle">2</text>
+              <text class="pg-num pg-t2" x="228" y="176" text-anchor="middle">3</text>
+              <text class="pg-num pg-t2" x="290" y="40" text-anchor="end" font-size="16">24h</text>
+            </svg>
+            <p class="pg-n">7</p>
+            <h3>Same opponent, less each time</h3>
+            <p>
+              Against the same opponent, matches from the 3rd confirmed one within 24 hours count
+              less.
+            </p>
+          </article>
+          <article class="pg-card">
+            <svg
+              viewBox="0 0 320 200"
+              role="img"
+              aria-label="A loop arrow: a new season starts ratings over">
+              <path class="pg-lns" d="M206 62a54 54 0 1 0 8 62" />
+              <path class="pg-lns" d="M190 44l18 18-24 6" />
+              <text x="160" y="106" text-anchor="middle" font-size="16">New season</text>
+            </svg>
+            <p class="pg-n">8</p>
+            <h3>A new season starts over</h3>
+            <p>
+              A new season starts ratings over. When one closes you get a recap: rank, peak rating,
+              win rate, best streak.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="block">
+        <h2>Words</h2>
+        <dl class="pg-words">
+          <div>
+            <dt>Rating</dt>
+            <dd>A Glicko-2 number that goes up or down after a confirmed match.</dd>
+          </div>
+          <div>
+            <dt>Confirmed</dt>
+            <dd>Both players have agreed on the result.</dd>
+          </div>
+          <div>
+            <dt>Placement</dt>
+            <dd>The 5 confirmed matches before you appear on the ladder.</dd>
+          </div>
+          <div>
+            <dt>Tier</dt>
+            <dd>One of Bronze, Silver, Gold or Platinum.</dd>
+          </div>
+          <div>
+            <dt>Dispute</dt>
+            <dd>Your opponent disagrees with the result. A moderator handles it.</dd>
+          </div>
+          <div>
+            <dt>Season</dt>
+            <dd>A stretch of play. A new season starts ratings over.</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="block">
+        <h2>The whole path</h2>
+        <ol class="pg-stops">
+          <li>
+            <span class="pg-stop"><b>Log</b><small>either player</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>Confirm</b><small>within 48 hours</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>Rating moves</b><small>confirmed only</small></span>
+          </li>
+          <li>
+            <span class="pg-stop"><b>On the ladder</b><small>after match 5</small></span>
+          </li>
+        </ol>
+      </section>
+      <section class="block">
+        <h2>Check yourself</h2>
+        <div class="faq">
+          <details>
+            <summary><h3>I logged a match. When does my rating change?</h3></summary>
+            <p>After your opponent confirms. Only confirmed matches move your rating.</p>
+          </details>
+          <details>
+            <summary><h3>What if my opponent never confirms?</h3></summary>
+            <p>Unconfirmed after 48 hours, it expires and never counts.</p>
+          </details>
+          <details>
+            <summary><h3>Why am I not on the ladder yet?</h3></summary>
+            <p>
+              You appear after 5 confirmed matches. Until then you see progress such as “placement
+              3/5”.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="block">
+        <h2>Next</h2>
+        <p class="pg-next">Play a match, log it, and have your opponent scan the QR to confirm.</p>
+        <div class="grid cols-2">
+          <div class="card chamfer-2">
+            <p class="label">In pictures</p>
+            <h3><a href="/en/learn/first-battle/">One scan starts your first battle</a></h3>
+            <p>
+              Two players stand together, one phone scans the other, and an unrated battle starts.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <nav class="foot-links" aria-label="Explore">
+        <a href="/en/ranking/">Hong Kong Beyblade X ranking</a>
+        <a href="/en/events/">Beyblade X events in Hong Kong</a>
+        <a href="/en/how-it-works/">How BeyHK works</a>
+        <a href="/en/blog/beyblade-x-beginner-guide/">Beginner guide</a>
+        <a href="/en/parents/">Parents and safety</a>
+        <a href="/en/llm-info/">For AI assistants</a>
+      </nav>
+      <div class="cols">
+        <div>
+          <p class="foot-brand">
+            <span class="mark" style="--mark-size: 28px" aria-hidden="true"
+              ><img src="/img/beyhk-mark.svg" alt="BeyHK" width="28" height="28" /></span
+            ><span class="wordmark">BeyHK</span>
+          </p>
+          <p>The unofficial community app for Beyblade X players in Hong Kong</p>
+        </div>
+        <nav aria-label="Privacy policy">
+          <a href="/privacy.html">Privacy policy</a>
+          <a href="/terms.html">Terms of use</a>
+          <a href="/data-deletion.html">Delete your data</a>
+          <button type="button" class="cookie-settings" data-consent-open hidden>
+            Cookie settings
+          </button>
+        </nav>
+        <nav aria-label="Follow">
+          <a href="https://www.instagram.com/beyhkfun" rel="me noopener">Instagram @beyhkfun</a>
+          <a href="https://www.threads.com/@beyhkfun" rel="me noopener">Threads @beyhkfun</a>
+          <a href="https://www.facebook.com/profile.php?id=61595220414128" rel="me noopener"
+            >Facebook</a
+          >
+          <a href="https://chat.whatsapp.com/GS6Yz5AJGaOHzvh4RnxtAM" rel="noopener"
+            >WhatsApp community</a
+          >
+        </nav>
+      </div>
+      <p class="disclaimer">
+        BeyHK is not affiliated with Takara Tomy or Hasbro. Beyblade is a trademark of its owners.
+        For players aged 13 and over; under-13s through a parent-managed account.
+      </p>
+      <p class="copyright">© 2026 BeyHK</p>
+    </footer>
+  </body>
+</html>
