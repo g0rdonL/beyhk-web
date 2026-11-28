@@ -2113,6 +2113,79 @@ nav.pages a {
   margin-top: 0;
 }
 
+/* Post link builder (/tools/links/), a staff tool. Reuses the beta form's field styles; only
+   the select, the date input, the output rows and the copy buttons are new. The site-link copy
+   button is the page's one lime moment. */
+.link-builder select,
+.link-builder input[type='date'] {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text-1);
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 0;
+}
+.link-builder select:focus-visible,
+.link-builder input[type='date']:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 1px;
+}
+.link-output {
+  display: grid;
+  gap: 20px;
+  max-width: 44em;
+  margin-top: 24px;
+}
+.link-output[hidden] {
+  display: none;
+}
+.link-code {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.link-output .field {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+.link-output .field > span {
+  font-weight: 600;
+}
+.link-output small {
+  font-size: 13px;
+  color: var(--text-3);
+}
+.link-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.link-row input {
+  flex: 1;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--text-1);
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 0;
+}
+.link-row .btn {
+  flex: none;
+  cursor: pointer;
+}
+.link-row .btn:disabled {
+  opacity: 0.6;
+}
+
 /* Homepage latest-posts carousel (scripts/site/blog/home.ts). A scroll-snap row that works
    without JavaScript; the inline script in the block wires the dots and arrows. */
 .latest-head {

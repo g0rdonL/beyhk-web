@@ -11,6 +11,8 @@
  */
 (function () {
   const TAG_ID = 'G-X52E2LW0JH';
+  const POST_PATTERN = '^[a-z0-9]+(?:-[a-z0-9]+){1,3}$';
+  const POST_KEY = 'beyhk-post';
   const KEY = 'beyhk-consent';
   const MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
   const TEXT = {
@@ -78,13 +80,38 @@
       s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(TAG_ID);
     } else {
       gtag('js', new Date());
-      gtag('config', TAG_ID, {
-        allow_google_signals: false,
-        allow_ad_personalization_signals: false,
-      });
+      const code = postCode();
+      gtag(
+        'config',
+        TAG_ID,
+        Object.assign(
+          {
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false,
+          },
+          code
+            ? {
+                campaign_name: code,
+                campaign_source: code.split('-')[0],
+                campaign_medium: 'social',
+              }
+            : {},
+        ),
+      );
       s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(TAG_ID);
     }
     document.head.appendChild(s);
+  }
+
+  /** The post code links.js kept for this tab, when it still has the documented shape. */
+  function postCode() {
+    try {
+      const code = sessionStorage.getItem(POST_KEY);
+      if (code && new RegExp(POST_PATTERN).test(code)) return code;
+    } catch {
+      /* Storage blocked: no campaign. */
+    }
+    return null;
   }
 
   /** After a withdrawal: drop Google's first-party cookies, then reload without the tags. */
